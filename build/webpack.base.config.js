@@ -1,11 +1,13 @@
 const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
+// const ImageminPlugin = require('imagemin-webpack-plugin').default
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
 module.exports = {
+  mode: process.env.NODE_ENV,
   entry: {
     app: './src/main.js'
   },
@@ -65,6 +67,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    // new ImageminPlugin({
+    //   // disable: process.env.NODE_ENV !== 'production',
+    // }),
   ],
 }

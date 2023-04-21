@@ -10,7 +10,6 @@ function resolve(dir) {
 }
 
 module.exports = merge(webpackBaseConfig, {
-  mode: 'development',
   devtool: 'source-map',
   module: {
     rules: styleLoaders({isProduction: false})
@@ -33,6 +32,15 @@ module.exports = merge(webpackBaseConfig, {
     client: {
       progress: true,
       overlay: true,
+    },
+    proxy: {
+      '/api': {
+        target: require('../config/yb-' + process.env.WEB_ENV + '.config.js').api + '/api',
+        changeOrigin: true, //在这里设置是否跨域
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
     }
     // historyApiFallback: {
     //   // HTML5 history模式

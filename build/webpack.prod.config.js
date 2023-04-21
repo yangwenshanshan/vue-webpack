@@ -11,7 +11,6 @@ function resolve(dir) {
 }
 
 module.exports = merge(webpackBaseConfig, {
-  mode: 'production',
   devtool: false,
   module: {
     rules: styleLoaders({isProduction: true})
@@ -26,7 +25,8 @@ module.exports = merge(webpackBaseConfig, {
     // new webpack.HotModuleReplacementPlugin(),
     // new webpack.NamedModulesPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'static/css/[name].css'
+      filename: 'static/css/[name].[contenthash].css',
+      chunkFilename: 'static/css/[name].[contenthash].css'
     }),
     new htmlWebpackPlugin({
       title: '易靓好车',

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+    }
+  },
+  "exclude": [ // 要排除的文件
+    "node_modules", 
+    "**/node_modules/*",
+    "dist"
+  ],
+}

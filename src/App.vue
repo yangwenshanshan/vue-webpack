@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <div>测试</div>
-    <img src="@/assets/logo.png">
+    <!-- <el-button type="primary">测试</el-button>
+    <img src="@/assets/logo.png"> -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -21,6 +22,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background: url('@/assets/logo.png');
+  // background: url('@/assets/logo.png');
 }
 </style>
