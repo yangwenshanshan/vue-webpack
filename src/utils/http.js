@@ -1,9 +1,7 @@
 import axios from 'axios'
 import { Message } from 'element-ui'
-import router from '@/routers'
-import store from '@/store'
 
-const excludeMessageUrl = ['/api/user/getUserInfo']
+const excludeMessageUrl = ['/api/user/getUserInfo', '/api/user/authList']
 
 const service = axios.create({
   baseURL: ''
@@ -34,8 +32,6 @@ service.interceptors.response.use(
             duration: 2 * 1000
           })
         }
-        // store.dispatch('loginOut')
-        // router.replace({ path: '/login' })
       } else {
         Message({
           message: res.message || 'Error',

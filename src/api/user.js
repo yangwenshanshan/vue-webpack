@@ -6,5 +6,11 @@ export default {
     headers: {
       'X-Requested-With': 'XMLHttpRequest'
     }
-  })
+  }),
+  getAuthList: (params) => http.get('/api/user/authList', {
+    params: params || {},
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest'
+    }
+  }),
 }
