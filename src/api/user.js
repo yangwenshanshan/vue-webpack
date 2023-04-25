@@ -13,4 +13,5 @@ export default {
       'X-Requested-With': 'XMLHttpRequest'
     }
   }),
+  userForSelect: (params) => http.get('/api/user/userForSelect', { params: params })
 }

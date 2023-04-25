@@ -1,0 +1,1085 @@
+[, , , {
+  path: "/client/realNameList",
+  name: "accountMgmt实名认证申请列表",
+  component: () => import('@/views/client/accountMgmt/realNameList/index.vue')
+}, {
+  path: "/client/adminMgmt",
+  name: "accountMgmt管理员管理",
+  component: () => import('@/views/client/accountMgmt/adminMgmt/index.vue')
+}, {
+  path: "/client/synthesizeManagerMgmt",
+  name: "accountMgmt综合岗管理",
+  component: () => import('@/views/client/accountMgmt/synthesizeManagerMgmt/index.vue')
+}, {
+  path: "/client/vehicleServiceMgmt",
+  name: "accountMgmt车务管理",
+  component: () => import('@/views/client/accountMgmt/vehicleServiceMgmt/index.vue')
+}, {
+  path: "/client/channelAdminMgmt",
+  name: "accountMgmt渠道管理员管理",
+  component: () => import('@/views/client/accountMgmt/channelAdminMgmt/index.vue')
+}, {
+  path: "/client/bankAdminMgmt",
+  name: "accountMgmt银行管理员管理",
+  component: () => import('@/views/client/accountMgmt/bankAdminMgmt/index.vue')
+}, {
+  path: "/client/channelMgmt",
+  name: "accountMgmt渠道管理",
+  component: () => import('@/views/client/accountMgmt/channelMgmt/index.vue')
+}, {
+  path: "/client/insuranceChannelMgmt",
+  name: "accountMgmt保险渠道管理",
+  component: () => import('@/views/client/accountMgmt/insuranceChannelMgmt/index.vue')
+}, {
+  path: "/client/capitalFlow",
+  name: "financeMgmt资金流水",
+  component: () => import('@/views/client/financeMgmt/capitalFlow/index.vue')
+}, {
+  path: "/client/withdrawRequest",
+  name: "financeMgmt提现申请",
+  component: () => import('@/views/client/financeMgmt/withdrawRequest/index.vue')
+}, {
+  path: "/client/repayMgmt",
+  name: "financeMgmt还款管理",
+  component: () => import('@/views/client/financeMgmt/repayMgmt/index.vue')
+}, {
+  path: "/client/partnerRouterMgmt",
+  name: "financeMgmt合作商路由管理",
+  component: () => import('@/views/client/financeMgmt/partnerRouterMgmt/index.vue')
+}, {
+  path: "/client/funderRepayMgmt",
+  name: "financeMgmt资方还款管理",
+  component: () => import('@/views/client/financeMgmt/funderRepayMgmt/index.vue')
+}, {
+  path: "/client/appropriationMgmt",
+  name: "financeMgmt拨款管理",
+  component: () => import('@/views/client/financeMgmt/appropriationMgmt/index.vue')
+}, {
+  path: "/client/paymentMgmt",
+  name: "financeMgmt付款管理",
+  component: () => import('@/views/client/financeMgmt/paymentMgmt/index.vue')
+}, {
+  path: "/client/receiptConfirmation",
+  name: "financeMgmt收款管理",
+  component: () => import('@/views/client/financeMgmt/receiptConfirmation/index.vue')
+}, {
+  path: "/client/receiptTask",
+  name: "financeMgmt收款任务",
+  component: () => import('@/views/client/financeMgmt/receiptTask/index.vue')
+}, {
+  path: "/client/commissionPay",
+  name: "financeMgmtT推广费用打款",
+  component: () => import('@/views/client/financeMgmt/commissionPay/index.vue')
+}, {
+  path: "/client/platformServiceFee",
+  name: "financeMgmt平台服务费统计",
+  component: () => import('@/views/client/financeMgmt/platformServiceFee/index.vue')
+}, {
+  path: "/client/ordinarySettlement",
+  name: "financeMgmtC模式推广费用",
+  component: () => import('@/views/client/financeMgmt/ordinarySettlement/index.vue')
+}, {
+  path: "/client/tOrdinarySettlement",
+  name: "financeMgmtordinarySettlementT普通结算",
+  component: () => import('@/views/client/financeMgmt/ordinarySettlement/tOrdinarySettlement/index.vue')
+}, {
+  path: "/client/xToPublicSettlement",
+  name: "financeMgmtordinarySettlementX对公结算",
+  component: () => import('@/views/client/financeMgmt/ordinarySettlement/xToPublicSettlement/index.vue')
+}, {
+  path: "/client/tToPublicSettlement",
+  name: "financeMgmtordinarySettlementT对公结算",
+  component: () => import('@/views/client/financeMgmt/ordinarySettlement/tToPublicSettlement/index.vue')
+}, {
+  path: "/client/BPromotionCost",
+  name: "financeMgmtB模式推广费用",
+  component: () => import('@/views/client/financeMgmt/BPromotionCost/index.vue')
+}, {
+  path: "/client/commissionModelList",
+  name: "systemMgmt佣金模型管理",
+  component: () => import('@/views/client/systemMgmt/commissionModelList/index.vue')
+}, {
+  path: "/client/ownershipList",
+  name: "systemMgmt上牌主体管理",
+  component: () => import('@/views/client/systemMgmt/ownershipList/index.vue')
+}, {
+  path: "/client/opreateRecordList",
+  name: "systemMgmt操作记录",
+  component: () => import('@/views/client/systemMgmt/opreateRecordList/index.vue')
+}, {
+  path: "/client/smsRecordList",
+  name: "systemMgmt短信记录",
+  component: () => import('@/views/client/systemMgmt/smsRecordList/index.vue')
+}, {
+  path: "/client/fourFactorMgmt",
+  name: "systemMgmt三要素四要素管理",
+  component: () => import('@/views/client/systemMgmt/fourFactorMgmt/index.vue')
+}, {
+  path: "/client/powerMgmt",
+  name: "systemMgmt权限管理",
+  component: () => import('@/views/client/systemMgmt/powerMgmt/index.vue')
+}, {
+  path: "/client/roleMgmt",
+  name: "systemMgmtpowerMgmt角色管理",
+  component: () => import('@/views/client/systemMgmt/powerMgmt/roleMgmt/index.vue')
+}, {
+  path: "/client/menuMgmt",
+  name: "systemMgmtpowerMgmt菜单管理",
+  component: () => import('@/views/client/systemMgmt/powerMgmt/menuMgmt/index.vue')
+}, {
+  path: "/client/publicAuth",
+  name: "systemMgmtpowerMgmt公共接口",
+  component: () => import('@/views/client/systemMgmt/powerMgmt/publicAuth/index.vue')
+}, {
+  path: "/client/protocolMgmt",
+  name: "systemMgmt协议管理",
+  component: () => import('@/views/client/systemMgmt/protocolMgmt/index.vue')
+}, {
+  path: "/receivePayment",
+  name: "systemMgmt收款管理",
+  component: () => import('@/views/client/systemMgmt/receivePayment/index.vue')
+}, {
+  path: "/client/alipayQrcodeMgmt",
+  name: "systemMgmtreceivePayment二维码管理",
+  component: () => import('@/views/client/systemMgmt/receivePayment/alipayQrcodeMgmt/index.vue')
+}, {
+  path: "/client/wxPayMerchantMgmt",
+  name: "systemMgmtreceivePayment微信商户号管理",
+  component: () => import('@/views/client/systemMgmt/receivePayment/wxPayMerchantMgmt/index.vue')
+}, {
+  path: "/appConfig",
+  name: "systemMgmtApp配置",
+  component: () => import('@/views/client/systemMgmt/appConfig/index.vue')
+}, {
+  path: "/client/homePageConfigMgmt",
+  name: "systemMgmtappConfigApp首页配置",
+  component: () => import('@/views/client/systemMgmt/appConfig/homePageConfigMgmt/index.vue')
+}, {
+  path: "/client/personalSortConfigMgmt",
+  name: "systemMgmtappConfig个性化分类配置",
+  component: () => import('@/views/client/systemMgmt/appConfig/personalSortConfigMgmt/index.vue')
+}, {
+  path: "/client/appVersionMgmt",
+  name: "systemMgmtappConfigApp版本管理",
+  component: () => import('@/views/client/systemMgmt/appConfig/appVersionMgmt/index.vue')
+}, {
+  path: "/client/appUpgradeMgmt",
+  name: "systemMgmtappConfigAPP升级管理",
+  component: () => import('@/views/client/systemMgmt/appConfig/appUpgradeMgmt/index.vue')
+}, {
+  path: "/client/bannerConfig",
+  name: "systemMgmt轮播图配置",
+  component: () => import('@/views/client/systemMgmt/bannerConfig/index.vue')
+}, {
+  path: "/client/exportTaskMgmt",
+  name: "systemMgmt导出任务管理",
+  component: () => import('@/views/client/systemMgmt/exportTaskMgmt/index.vue')
+}, {
+  path: "/urgentOperateMgmt",
+  name: "systemMgmt紧急操作",
+  component: () => import('@/views/client/systemMgmt/urgentOperateMgmt/index.vue')
+}, {
+  path: "/client/replaceFile",
+  name: "systemMgmturgentOperateMgmt文件替换",
+  component: () => import('@/views/client/systemMgmt/urgentOperateMgmt/replaceFile/index.vue')
+}, {
+  path: "/client/dataDictionary",
+  name: "systemMgmt数据字典",
+  component: () => import('@/views/client/systemMgmt/dataDictionary/index.vue')
+}, {
+  path: "/client/excelTool",
+  name: "systemMgmtexcel工具",
+  component: () => import('@/views/client/systemMgmt/excelTool/index.vue')
+}, {
+  path: "/client/humanResources",
+  name: "systemMgmtexcelTool人力资源",
+  component: () => import('@/views/client/systemMgmt/excelTool/humanResources/index.vue')
+}, {
+  path: "/client/funderWidgets",
+  name: "systemMgmtexcelTool资方小工具",
+  component: () => import('@/views/client/systemMgmt/excelTool/funderWidgets/index.vue')
+}, {
+  path: "/client/contractMgmt",
+  name: "systemMgmt合同管理",
+  component: () => import('@/views/client/systemMgmt/contractMgmt/index.vue')
+}, {
+  path: "/client/contractParams",
+  name: "systemMgmtcontractMgmt合同参数",
+  component: () => import('@/views/client/systemMgmt/contractMgmt/contractParams/index.vue')
+}, {
+  path: "/client/contractTemplate",
+  name: "systemMgmtcontractMgmt合同模板",
+  component: () => import('@/views/client/systemMgmt/contractMgmt/contractTemplate/index.vue')
+}, {
+  path: "/client/contractCombination",
+  name: "systemMgmtcontractMgmt合同套件",
+  component: () => import('@/views/client/systemMgmt/contractMgmt/contractCombination/index.vue')
+}, {
+  path: "/client/purchaseCarWork",
+  name: "standingBookMgmt采购交车工作台",
+  component: () => import('@/views/client/standingBookMgmt/purchaseCarWork/index.vue')
+}, {
+  path: "/supplyChainMgmt",
+  name: "standingBookMgmt供应链管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/index.vue')
+}, {
+  path: "/carsPurchaseMgmt",
+  name: "standingBookMgmtsupplyChainMgmt车辆采购管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/index.vue')
+}, {
+  path: "/client/purchaseTask",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购任务分配",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseTask/index.vue')
+}, {
+  path: "/client/purchaseLegalAudit",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt法务合同审核",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseLegalAudit/index.vue')
+}, {
+  path: "/client/purchaseAppropriationApplication",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购拨款申请",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseAppropriationApplication/index.vue')
+}, {
+  path: "/client/purchaseFundApplication",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购用款申请",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseFundApplication/index.vue')
+}, {
+  path: "/client/printingForPurchaseContracts",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购合同用印",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/printingForPurchaseContracts/index.vue')
+}, {
+  path: "/client/cooperationCostMgmt",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt合作费用管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/cooperationCostMgmt/index.vue')
+}, {
+  path: "/client/supplierMgmt",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt供应商管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/supplierMgmt/index.vue')
+}, {
+  path: "/client/purchaseCommissionMgmt",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购返佣管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseCommissionMgmt/index.vue')
+}, {
+  path: "/client/purchaseIncreaseMgmt",
+  name: "standingBookMgmtsupplyChainMgmtcarsPurchaseMgmt采购增收管理",
+  component: () => import('@/views/client/standingBookMgmt/supplyChainMgmt/carsPurchaseMgmt/purchaseIncreaseMgmt/index.vue')
+}, {
+  path: "/client/returnCommissionMgmt",
+  name: "standingBookMgmt推广费用管理",
+  component: () => import('@/views/client/standingBookMgmt/returnCommissionMgmt/index.vue')
+}, {
+  path: "/client/returnCommissionNewMgmt",
+  name: "standingBookMgmt推广费用管理(新)",
+  component: () => import('@/views/client/standingBookMgmt/returnCommissionNewMgmt/index.vue')
+}, {
+  path: "/client/xReturnCommission",
+  name: "standingBookMgmtreturnCommissionNewMgmtX推广费用",
+  component: () => import('@/views/client/standingBookMgmt/returnCommissionNewMgmt/xReturnCommission/index.vue')
+}, {
+  path: "/client/tReturnCommission",
+  name: "standingBookMgmtreturnCommissionNewMgmtT推广费用",
+  component: () => import('@/views/client/standingBookMgmt/returnCommissionNewMgmt/tReturnCommission/index.vue')
+}, {
+  path: "/GPS_Mgmt",
+  name: "standingBookMgmtGPS管理",
+  component: () => import('@/views/client/standingBookMgmt/GPS_Mgmt/index.vue')
+}, {
+  path: "/client/GPSCompanyMgmt",
+  name: "standingBookMgmtGPS_MgmtGPS公司管理",
+  component: () => import('@/views/client/standingBookMgmt/GPS_Mgmt/GPSCompanyMgmt/index.vue')
+}, {
+  path: "/client/GPSMgmt",
+  name: "standingBookMgmtGPS_MgmtGPS管理",
+  component: () => import('@/views/client/standingBookMgmt/GPS_Mgmt/GPSMgmt/index.vue')
+}, {
+  path: "/client/GPSPositionMgmt",
+  name: "standingBookMgmtGPS_MgmtGPS位置管理",
+  component: () => import('@/views/client/standingBookMgmt/GPS_Mgmt/GPSPositionMgmt/index.vue')
+}, {
+  path: "/carOperationMgmt",
+  name: "standingBookMgmt车辆运营管理",
+  component: () => import('@/views/client/standingBookMgmt/carOperationMgmt/index.vue')
+}, {
+  path: "/client/licenseMgmt",
+  name: "standingBookMgmtcarOperationMgmt上牌管理",
+  component: () => import('@/views/client/standingBookMgmt/carOperationMgmt/licenseMgmt/index.vue')
+}, {
+  path: "/client/deliveryMgmt",
+  name: "standingBookMgmtcarOperationMgmt交车管理",
+  component: () => import('@/views/client/standingBookMgmt/carOperationMgmt/deliveryMgmt/index.vue')
+}, {
+  path: "/operationMgmt",
+  name: "standingBookMgmt运营管理",
+  component: () => import('@/views/client/standingBookMgmt/operationMgmt/index.vue')
+}, {
+  path: "/client/payBillMgmt",
+  name: "standingBookMgmtoperationMgmt出账管理",
+  component: () => import('@/views/client/standingBookMgmt/operationMgmt/payBillMgmt/index.vue')
+}, {
+  path: "/client/newCarOffShelfMgmt",
+  name: "standingBookMgmt新车金融产品上架",
+  component: () => import('@/views/client/standingBookMgmt/newCarOffShelfMgmt/index.vue')
+}, {
+  path: "/logistics",
+  name: "standingBookMgmt物流管理",
+  component: () => import('@/views/client/standingBookMgmt/logistics/index.vue')
+}, {
+  path: "/client/logisticsMgmtNew",
+  name: "standingBookMgmtlogistics物流管理",
+  component: () => import('@/views/client/standingBookMgmt/logistics/logisticsMgmtNew/index.vue')
+}, {
+  path: "/client/logisticsProvidersMgmt",
+  name: "standingBookMgmtlogistics物流商管理",
+  component: () => import('@/views/client/standingBookMgmt/logistics/logisticsProvidersMgmt/index.vue')
+}, {
+  path: "/client/expenseApproval",
+  name: "standingBookMgmtlogistics费用修改审核",
+  component: () => import('@/views/client/standingBookMgmt/logistics/expenseApproval/index.vue')
+}, {
+  path: "/client/mortgageMgmt",
+  name: "standingBookMgmt抵押管理",
+  component: () => import('@/views/client/standingBookMgmt/mortgageMgmt/index.vue')
+}, {
+  path: "/client/mortgageOrder",
+  name: "standingBookMgmtmortgageMgmt抵押解抵押工单",
+  component: () => import('@/views/client/standingBookMgmt/mortgageMgmt/mortgageOrder/index.vue')
+}, {
+  path: "/client/mortgageSupplier",
+  name: "standingBookMgmtmortgageMgmt供应商管理",
+  component: () => import('@/views/client/standingBookMgmt/mortgageMgmt/mortgageSupplier/index.vue')
+}, {
+  path: "/client/mortgageCost",
+  name: "standingBookMgmtmortgageMgmt费用申请",
+  component: () => import('@/views/client/standingBookMgmt/mortgageMgmt/mortgageCost/index.vue')
+}, {
+  path: "/client/mortgageCity",
+  name: "standingBookMgmtmortgageMgmt抵押城市管理",
+  component: () => import('@/views/client/standingBookMgmt/mortgageMgmt/mortgageCity/index.vue')
+}, {
+  path: "/client/repaymentMgmt",
+  name: "postRentingMgmt客户还款管理",
+  component: () => import('@/views/client/postRentingMgmt/repaymentMgmt/index.vue')
+}, {
+  path: "/client/collectioSsurface",
+  name: "postRentingMgmt催收情况表",
+  component: () => import('@/views/client/postRentingMgmt/collectioSsurface/index.vue')
+}, {
+  path: "/client/repaymentOutSourceMgmt",
+  name: "postRentingMgmt委外还款管理",
+  component: () => import('@/views/client/postRentingMgmt/repaymentOutSourceMgmt/index.vue')
+}, {
+  path: "/violationMgmt",
+  name: "postRentingMgmt违章管理",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/index.vue')
+}, {
+  path: "/client/violationMgmt",
+  name: "postRentingMgmtviolationMgmt违章信息查询",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/violationMgmt/index.vue')
+}, {
+  path: "/client/violationFeeMgmt",
+  name: "postRentingMgmtviolationMgmt违章违约金管理(清收车)",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/violationFeeMgmt/index.vue')
+}, {
+  path: "/client/mailExchange",
+  name: "postRentingMgmtviolationMgmt邮件往来",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/mailExchange/index.vue')
+}, {
+  path: "/client/receiptPayment",
+  name: "postRentingMgmtviolationMgmt收票打款",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/receiptPayment/index.vue')
+}, {
+  path: "/client/violationFeeRecovery",
+  name: "postRentingMgmtviolationMgmt违章违约金追款",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/violationFeeRecovery/index.vue')
+}, {
+  path: "/client/classificationInfoMgmt",
+  name: "postRentingMgmtviolationMgmt分类信息管理",
+  component: () => import('@/views/client/postRentingMgmt/violationMgmt/classificationInfoMgmt/index.vue')
+}, {
+  path: "/client/exemplaryCaseMgmt",
+  name: "postRentingMgmt专案管理",
+  component: () => import('@/views/client/postRentingMgmt/exemplaryCaseMgmt/index.vue')
+}, {
+  path: "/client/writtenLetterMgmt",
+  name: "postRentingMgmt书面函管理",
+  component: () => import('@/views/client/postRentingMgmt/writtenLetterMgmt/index.vue')
+}, {
+  path: "/client/clearingMgmt",
+  name: "postRentingMgmt清收管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/index.vue')
+}, {
+  path: "/client/generalLiquidateMgmt",
+  name: "postRentingMgmtclearingMgmt普通清收管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/generalLiquidateMgmt/index.vue')
+}, {
+  path: "/client/difficultLiquidateMgmt",
+  name: "postRentingMgmtclearingMgmt疑难清收管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/difficultLiquidateMgmt/index.vue')
+}, {
+  path: "/client/riskControlLiquidateMgmt",
+  name: "postRentingMgmtclearingMgmt清收风控管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/riskControlLiquidateMgmt/index.vue')
+}, {
+  path: "/client/keyLiquidateMgmt",
+  name: "postRentingMgmtclearingMgmt清收钥匙管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/keyLiquidateMgmt/index.vue')
+}, {
+  path: "/client/reasonLiquidateMgmt",
+  name: "postRentingMgmtclearingMgmt清收原因管理",
+  component: () => import('@/views/client/postRentingMgmt/clearingMgmt/reasonLiquidateMgmt/index.vue')
+}, {
+  path: "/client/terminateContractMgmt",
+  name: "postRentingMgmt解约管理",
+  component: () => import('@/views/client/postRentingMgmt/terminateContractMgmt/index.vue')
+}, {
+  path: "/client/prepareMgmt",
+  name: "postRentingMgmt整备管理",
+  component: () => import('@/views/client/postRentingMgmt/prepareMgmt/index.vue')
+}, {
+  path: "/client/reletMgmt",
+  name: "postRentingMgmt续租管理",
+  component: () => import('@/views/client/postRentingMgmt/reletMgmt/index.vue')
+}, {
+  path: "/vehicleMonitorMgmt",
+  name: "postRentingMgmt车辆监控管理",
+  component: () => import('@/views/client/postRentingMgmt/vehicleMonitorMgmt/index.vue')
+}, {
+  path: "/client/systemMonitorMgmt",
+  name: "postRentingMgmtvehicleMonitorMgmt系统监控管理",
+  component: () => import('@/views/client/postRentingMgmt/vehicleMonitorMgmt/systemMonitorMgmt/index.vue')
+}, {
+  path: "/client/manualMonitorMgmt",
+  name: "postRentingMgmtvehicleMonitorMgmt人工监控管理",
+  component: () => import('@/views/client/postRentingMgmt/vehicleMonitorMgmt/manualMonitorMgmt/index.vue')
+}, {
+  path: "/client/monitoringRulesMgmt",
+  name: "postRentingMgmtvehicleMonitorMgmt监控规则管理",
+  component: () => import('@/views/client/postRentingMgmt/vehicleMonitorMgmt/monitoringRulesMgmt/index.vue')
+}, {
+  path: "settleMgmt",
+  name: "postRentingMgmt结清管理",
+  component: () => import('@/views/client/postRentingMgmt/settleMgmt/index.vue')
+}, {
+  path: "/client/settleMgmt",
+  name: "postRentingMgmtsettleMgmt提前结清",
+  component: () => import('@/views/client/postRentingMgmt/settleMgmt/settleMgmt/index.vue')
+}, {
+  path: "/client/mediateSettle",
+  name: "postRentingMgmtsettleMgmt调解结清",
+  component: () => import('@/views/client/postRentingMgmt/settleMgmt/mediateSettle/index.vue')
+}, {
+  path: "/client/mediateSettleSupplierMgmt",
+  name: "postRentingMgmtsettleMgmt供应商管理",
+  component: () => import('@/views/client/postRentingMgmt/settleMgmt/mediateSettleSupplierMgmt/index.vue')
+}, {
+  path: "/client/assetTransferMgmt",
+  name: "postRentingMgmt资产过户管理",
+  component: () => import('@/views/client/postRentingMgmt/assetTransferMgmt/index.vue')
+}, {
+  path: "/client/assetTransferMgmt",
+  name: "postRentingMgmtassetTransferMgmt资产过户管理",
+  component: () => import('@/views/client/postRentingMgmt/assetTransferMgmt/assetTransferMgmt/index.vue')
+}, {
+  path: "/client/materialKitMgmt",
+  name: "postRentingMgmtassetTransferMgmt材料套件管理",
+  component: () => import('@/views/client/postRentingMgmt/assetTransferMgmt/materialKitMgmt/index.vue')
+}, {
+  path: "/client/carInterpellationMgmt",
+  name: "postRentingMgmt催告管理",
+  component: () => import('@/views/client/postRentingMgmt/carInterpellationMgmt/index.vue')
+}, {
+  path: "/client/assetContractMgmt",
+  name: "postRentingMgmt资产签约",
+  component: () => import('@/views/client/postRentingMgmt/assetContractMgmt/index.vue')
+}, {
+  path: "/client/contractBatchMgmt",
+  name: "postRentingMgmtassetContractMgmt签约批次管理",
+  component: () => import('@/views/client/postRentingMgmt/assetContractMgmt/contractBatchMgmt/index.vue')
+}, {
+  path: "/client/contractTaskMgmt",
+  name: "postRentingMgmtassetContractMgmt签约任务管理",
+  component: () => import('@/views/client/postRentingMgmt/assetContractMgmt/contractTaskMgmt/index.vue')
+}, {
+  path: "/client/insurancePremiumMgmt",
+  name: "postRentingMgmt保费管理",
+  component: () => import('@/views/client/postRentingMgmt/insurancePremiumMgmt/index.vue')
+}, {
+  path: "/client/insuranceRepayment",
+  name: "postRentingMgmtinsurancePremiumMgmt保费还款管理",
+  component: () => import('@/views/client/postRentingMgmt/insurancePremiumMgmt/insuranceRepayment/index.vue')
+}, {
+  path: "/client/insuranceApply",
+  name: "postRentingMgmtinsurancePremiumMgmt我的申请",
+  component: () => import('@/views/client/postRentingMgmt/insurancePremiumMgmt/insuranceApply/index.vue')
+}, {
+  path: "/client/insuranceApprove",
+  name: "postRentingMgmtinsurancePremiumMgmt审批",
+  component: () => import('@/views/client/postRentingMgmt/insurancePremiumMgmt/insuranceApprove/index.vue')
+}, {
+  path: "/尚诚",
+  name: "fundProviderMgmt尚诚",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/index.vue')
+}, {
+  path: "/资金投放审批(尚诚)",
+  name: "fundProviderMgmt尚诚资金投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/资金投放审批(尚诚)/index.vue')
+}, {
+  path: "/client/shangCheng/fundPutInApproval",
+  name: "fundProviderMgmt尚诚资金投放审批(尚诚)订单投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/资金投放审批(尚诚)/shangChengfundPutInApproval/index.vue')
+}, {
+  path: "/放款管理(尚诚)",
+  name: "fundProviderMgmt尚诚放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/放款管理(尚诚)/index.vue')
+}, {
+  path: "/client/shangCheng/loanMgmt",
+  name: "fundProviderMgmt尚诚放款管理(尚诚)订单放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/放款管理(尚诚)/shangChengloanMgmt/index.vue')
+}, {
+  path: "/收款确认(尚诚)",
+  name: "fundProviderMgmt尚诚收款确认",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/收款确认(尚诚)/index.vue')
+}, {
+  path: "/client/shangCheng/assetPackageReceiptConfirmation",
+  name: "fundProviderMgmt尚诚收款确认(尚诚)资产包收款确认",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/收款确认(尚诚)/shangChengassetPackageReceiptConfirmation/index.vue')
+}, {
+  path: "/client/shangCheng/settlementMgmt",
+  name: "fundProviderMgmt尚诚结清管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/shangChengsettlementMgmt/index.vue')
+}, {
+  path: "/资产池查询(尚诚)",
+  name: "fundProviderMgmt尚诚资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/资产池查询(尚诚)/index.vue')
+}, {
+  path: "/client/shangCheng/assetPoolQuery",
+  name: "fundProviderMgmt尚诚资产池查询(尚诚)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/资产池查询(尚诚)/shangChengassetPoolQuery/index.vue')
+}, {
+  path: "/再融资管理(尚诚)",
+  name: "fundProviderMgmt尚诚再融资管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/index.vue')
+}, {
+  path: "/client/shangCheng/financingProductsMgmt",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)融资产品管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengfinancingProductsMgmt/index.vue')
+}, {
+  path: "/client/shangCheng/assetPackageDeliveryMgmt",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)资产包投放管理",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengassetPackageDeliveryMgmt/index.vue')
+}, {
+  path: "/client/shangCheng/assetPackageRepayment",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)资产包还款",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengassetPackageRepayment/index.vue')
+}, {
+  path: "/client/shangCheng/assetPackageQuery",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)资产包查询",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengassetPackageQuery/index.vue')
+}, {
+  path: "/client/shangCheng/assetReplace",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)资产替换",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengassetReplace/index.vue')
+}, {
+  path: "/client/shangCheng/assetPackageAssetSettlement",
+  name: "fundProviderMgmt尚诚再融资管理(尚诚)资产包资产结清",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/再融资管理(尚诚)/shangChengassetPackageAssetSettlement/index.vue')
+}, {
+  path: "/client/shangCheng/dataReport",
+  name: "fundProviderMgmt尚诚数据报表",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/shangChengdataReport/index.vue')
+}, {
+  path: "/client/shangCheng/assetMonitor",
+  name: "fundProviderMgmt尚诚资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/尚诚/shangChengassetMonitor/index.vue')
+}, {
+  path: "/同康",
+  name: "fundProviderMgmt同康",
+  component: () => import('@/views/client/fundProviderMgmt/同康/index.vue')
+}, {
+  path: "/资金投放审批(同康)",
+  name: "fundProviderMgmt同康资金投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/同康/资金投放审批(同康)/index.vue')
+}, {
+  path: "/client/tongKang/fundPutInApproval",
+  name: "fundProviderMgmt同康资金投放审批(同康)订单投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/同康/资金投放审批(同康)/tongKangfundPutInApproval/index.vue')
+}, {
+  path: "/放款管理(同康)",
+  name: "fundProviderMgmt同康放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/同康/放款管理(同康)/index.vue')
+}, {
+  path: "/client/tongKang/loanMgmt",
+  name: "fundProviderMgmt同康放款管理(同康)订单放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/同康/放款管理(同康)/tongKangloanMgmt/index.vue')
+}, {
+  path: "/client/tongKang/settlementMgmt",
+  name: "fundProviderMgmt同康结清管理",
+  component: () => import('@/views/client/fundProviderMgmt/同康/tongKangsettlementMgmt/index.vue')
+}, {
+  path: "/资产池查询(同康)",
+  name: "fundProviderMgmt同康资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/同康/资产池查询(同康)/index.vue')
+}, {
+  path: "/client/tongKang/assetPoolQuery",
+  name: "fundProviderMgmt同康资产池查询(同康)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/同康/资产池查询(同康)/tongKangassetPoolQuery/index.vue')
+}, {
+  path: "/client/tongKang/fundProviderRepayTransactionFlow",
+  name: "fundProviderMgmt同康客户还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/同康/tongKangfundProviderRepayTransactionFlow/index.vue')
+}, {
+  path: "/client/tongKang/dataReport",
+  name: "fundProviderMgmt同康数据报表",
+  component: () => import('@/views/client/fundProviderMgmt/同康/tongKangdataReport/index.vue')
+}, {
+  path: "/client/tongKang/exportTaskMgmt",
+  name: "fundProviderMgmt同康导出任务管理",
+  component: () => import('@/views/client/fundProviderMgmt/同康/tongKangexportTaskMgmt/index.vue')
+}, {
+  path: "/client/tongKang/assetMonitor",
+  name: "fundProviderMgmt同康资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/同康/tongKangassetMonitor/index.vue')
+}, {
+  path: "/建德",
+  name: "fundProviderMgmt建德",
+  component: () => import('@/views/client/fundProviderMgmt/建德/index.vue')
+}, {
+  path: "/资金投放审批",
+  name: "fundProviderMgmt建德资金投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/建德/资金投放审批/index.vue')
+}, {
+  path: "/client/jianDe/assetPackageDelivery",
+  name: "fundProviderMgmt建德资金投放审批资产包投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/建德/资金投放审批/jianDeassetPackageDelivery/index.vue')
+}, {
+  path: "/放款管理",
+  name: "fundProviderMgmt建德放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/建德/放款管理/index.vue')
+}, {
+  path: "/client/jianDe/loanMgmt",
+  name: "fundProviderMgmt建德放款管理资产包放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/建德/放款管理/jianDeloanMgmt/index.vue')
+}, {
+  path: "/资产池查询",
+  name: "fundProviderMgmt建德资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/建德/资产池查询/index.vue')
+}, {
+  path: "/client/jianDe/assetPackageQuery",
+  name: "fundProviderMgmt建德资产池查询资产包资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/建德/资产池查询/jianDeassetPackageQuery/index.vue')
+}, {
+  path: "/还款交易流水",
+  name: "fundProviderMgmt建德还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/建德/还款交易流水/index.vue')
+}, {
+  path: "/client/jianDe/repaymentFlow",
+  name: "fundProviderMgmt建德还款交易流水资产包还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/建德/还款交易流水/jianDerepaymentFlow/index.vue')
+}, {
+  path: "/client/jianDe/dataReport",
+  name: "fundProviderMgmt建德数据报表",
+  component: () => import('@/views/client/fundProviderMgmt/建德/jianDedataReport/index.vue')
+}, {
+  path: "/client/jianDe/assetMonitor",
+  name: "fundProviderMgmt建德资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/建德/jianDeassetMonitor/index.vue')
+}, {
+  path: "/jiaofaMgmt",
+  name: "fundProviderMgmt泉州交发融租",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/index.vue')
+}, {
+  path: "/client/jiaofaMgmt/contractSignedMgmt",
+  name: "fundProviderMgmtjiaofaMgmt合同签署管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofaMgmtcontractSignedMgmt/index.vue')
+}, {
+  path: "/资金投放审批(泉州交发)",
+  name: "fundProviderMgmtjiaofaMgmt资金投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资金投放审批(泉州交发)/index.vue')
+}, {
+  path: "/client/jiaofa/fundPutInApproval",
+  name: "fundProviderMgmtjiaofaMgmt资金投放审批(泉州交发)订单投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资金投放审批(泉州交发)/jiaofafundPutInApproval/index.vue')
+}, {
+  path: "/client/jiaofa/assetPackagePlacementApproval",
+  name: "fundProviderMgmtjiaofaMgmt资金投放审批(泉州交发)资产包投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资金投放审批(泉州交发)/jiaofaassetPackagePlacementApproval/index.vue')
+}, {
+  path: "/放款管理(泉州交发)",
+  name: "fundProviderMgmtjiaofaMgmt放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/放款管理(泉州交发)/index.vue')
+}, {
+  path: "/client/jiaofa/loanMgmt",
+  name: "fundProviderMgmtjiaofaMgmt放款管理(泉州交发)订单放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/放款管理(泉州交发)/jiaofaloanMgmt/index.vue')
+}, {
+  path: "/client/jiaofa/assetPackageLoanMgmt",
+  name: "fundProviderMgmtjiaofaMgmt放款管理(泉州交发)资产包放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/放款管理(泉州交发)/jiaofaassetPackageLoanMgmt/index.vue')
+}, {
+  path: "/对账管理(泉州交发)",
+  name: "fundProviderMgmtjiaofaMgmt对账管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/对账管理(泉州交发)/index.vue')
+}, {
+  path: "/client/jiaofa/repayment",
+  name: "fundProviderMgmtjiaofaMgmt对账管理(泉州交发)保证金还款",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/对账管理(泉州交发)/jiaofarepayment/index.vue')
+}, {
+  path: "/client/jiaofa/refund",
+  name: "fundProviderMgmtjiaofaMgmt对账管理(泉州交发)保证金退款",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/对账管理(泉州交发)/jiaofarefund/index.vue')
+}, {
+  path: "/client/jiaofa/settlementMgmt",
+  name: "fundProviderMgmtjiaofaMgmt对账管理(泉州交发)结清管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/对账管理(泉州交发)/jiaofasettlementMgmt/index.vue')
+}, {
+  path: "/client/jiaofa/assetPackageAssetSettlement",
+  name: "fundProviderMgmtjiaofaMgmt对账管理(泉州交发)资产包资产结清",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/对账管理(泉州交发)/jiaofaassetPackageAssetSettlement/index.vue')
+}, {
+  path: "/资产池查询(泉州交发)",
+  name: "fundProviderMgmtjiaofaMgmt资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资产池查询(泉州交发)/index.vue')
+}, {
+  path: "/client/jiaofa/assetPoolQuery",
+  name: "fundProviderMgmtjiaofaMgmt资产池查询(泉州交发)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资产池查询(泉州交发)/jiaofaassetPoolQuery/index.vue')
+}, {
+  path: "/client/jiaofa/assetPackageQuery",
+  name: "fundProviderMgmtjiaofaMgmt资产池查询(泉州交发)资产包查询",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/资产池查询(泉州交发)/jiaofaassetPackageQuery/index.vue')
+}, {
+  path: "/client/jiaofa/fundProviderRepayTransactionFlow",
+  name: "fundProviderMgmtjiaofaMgmt客户还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofafundProviderRepayTransactionFlow/index.vue')
+}, {
+  path: "/client/jiaofa/dataReport",
+  name: "fundProviderMgmtjiaofaMgmt数据报表",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofadataReport/index.vue')
+}, {
+  path: "/client/jiaofa/exportTaskMgmt",
+  name: "fundProviderMgmtjiaofaMgmt导出任务管理",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofaexportTaskMgmt/index.vue')
+}, {
+  path: "/client/jiaofaMgmt/assetMonitor",
+  name: "fundProviderMgmtjiaofaMgmt资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofaMgmtassetMonitor/index.vue')
+}, {
+  path: "/client/jiaofa/dataStatement",
+  name: "fundProviderMgmtjiaofaMgmt数据报表",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofadataStatement/index.vue')
+}, {
+  path: "/client/jiaofaMgmt/customerRepaymentStatus",
+  name: "fundProviderMgmtjiaofaMgmtjiaofadataStatement资产包客户还款情况表",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofadataStatement/jiaofaMgmtcustomerRepaymentStatus/index.vue')
+}, {
+  path: "/client/jiaofaMgmt/customerRepaymentStatus2",
+  name: "fundProviderMgmtjiaofaMgmtjiaofadataStatement资产包客户还款表",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofadataStatement/jiaofaMgmtcustomerRepaymentStatus2/index.vue')
+}, {
+  path: "/client/jiaofaMgmt/comparisonOfAssetPackage",
+  name: "fundProviderMgmtjiaofaMgmtjiaofadataStatement资产包同期订单对比",
+  component: () => import('@/views/client/fundProviderMgmt/jiaofaMgmt/jiaofadataStatement/jiaofaMgmtcomparisonOfAssetPackage/index.vue')
+}, {
+  path: "/oulishiMgmt",
+  name: "fundProviderMgmt欧力士",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/index.vue')
+}, {
+  path: "/client/oulishiMgmt/riskFirstReview",
+  name: "fundProviderMgmtoulishiMgmt风控初审管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtriskFirstReview/index.vue')
+}, {
+  path: "/client/oulishiMgmt/contractSignedMgmt",
+  name: "fundProviderMgmtoulishiMgmt合同签署管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtcontractSignedMgmt/index.vue')
+}, {
+  path: "/资金投放审批(欧力士)",
+  name: "fundProviderMgmtoulishiMgmt资金投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/资金投放审批(欧力士)/index.vue')
+}, {
+  path: "/client/oulishiMgmt/fundPutInApproval",
+  name: "fundProviderMgmtoulishiMgmt资金投放审批(欧力士)订单投放审批",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/资金投放审批(欧力士)/oulishiMgmtfundPutInApproval/index.vue')
+}, {
+  path: "/放款管理(欧力士)",
+  name: "fundProviderMgmtoulishiMgmt放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/放款管理(欧力士)/index.vue')
+}, {
+  path: "/client/oulishiMgmt/loanMgmt",
+  name: "fundProviderMgmtoulishiMgmt放款管理(欧力士)订单放款管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/放款管理(欧力士)/oulishiMgmtloanMgmt/index.vue')
+}, {
+  path: "/对账管理(欧力士)",
+  name: "fundProviderMgmtoulishiMgmt对账管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/对账管理(欧力士)/index.vue')
+}, {
+  path: "/client/oulishi/repayment",
+  name: "fundProviderMgmtoulishiMgmt对账管理(欧力士)保证金还款",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/对账管理(欧力士)/oulishirepayment/index.vue')
+}, {
+  path: "/client/oulishi/refund",
+  name: "fundProviderMgmtoulishiMgmt对账管理(欧力士)代收付管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/对账管理(欧力士)/oulishirefund/index.vue')
+}, {
+  path: "/client/oulishi/settlementMgmt",
+  name: "fundProviderMgmtoulishiMgmt对账管理(欧力士)结清管理",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/对账管理(欧力士)/oulishisettlementMgmt/index.vue')
+}, {
+  path: "/资产池查询(欧力士)",
+  name: "fundProviderMgmtoulishiMgmt资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/资产池查询(欧力士)/index.vue')
+}, {
+  path: "/client/oulishiMgmt/assetPoolQuery",
+  name: "fundProviderMgmtoulishiMgmt资产池查询(欧力士)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/资产池查询(欧力士)/oulishiMgmtassetPoolQuery/index.vue')
+}, {
+  path: "/client/oulishiMgmt/fundProviderRepayTransactionFlow",
+  name: "fundProviderMgmtoulishiMgmt客户还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtfundProviderRepayTransactionFlow/index.vue')
+}, {
+  path: "/client/oulishiMgmt/monitor",
+  name: "fundProviderMgmtoulishiMgmt资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtmonitor/index.vue')
+}, {
+  path: "/client/oulishiMgmt/assetMonitorOrder",
+  name: "fundProviderMgmtoulishiMgmtoulishiMgmtmonitor订单资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtmonitor/oulishiMgmtassetMonitorOrder/index.vue')
+}, {
+  path: "/client/oulishiMgmt/assetMonitor",
+  name: "fundProviderMgmtoulishiMgmtoulishiMgmtmonitor资产包资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/oulishiMgmt/oulishiMgmtmonitor/oulishiMgmtassetMonitor/index.vue')
+}, {
+  path: "/玖亿",
+  name: "fundProviderMgmt玖亿",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/index.vue')
+}, {
+  path: "/client/jiuYi/settlementMgmt",
+  name: "fundProviderMgmt玖亿结清管理",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/jiuYisettlementMgmt/index.vue')
+}, {
+  path: "/资产池查询(玖亿)",
+  name: "fundProviderMgmt玖亿资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/资产池查询(玖亿)/index.vue')
+}, {
+  path: "/client/jiuYi/assetPoolQuery",
+  name: "fundProviderMgmt玖亿资产池查询(玖亿)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/资产池查询(玖亿)/jiuYiassetPoolQuery/index.vue')
+}, {
+  path: "/client/jiuYi/fundProviderRepayTransactionFlow",
+  name: "fundProviderMgmt玖亿客户还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/jiuYifundProviderRepayTransactionFlow/index.vue')
+}, {
+  path: "/client/jiuYi/exportTaskMgmt",
+  name: "fundProviderMgmt玖亿导出任务管理",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/jiuYiexportTaskMgmt/index.vue')
+}, {
+  path: "/client/jiuYi/assetMonitor",
+  name: "fundProviderMgmt玖亿资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/玖亿/jiuYiassetMonitor/index.vue')
+}, {
+  path: "/国泰大搜车",
+  name: "fundProviderMgmt国泰大搜车",
+  component: () => import('@/views/client/fundProviderMgmt/国泰大搜车/index.vue')
+}, {
+  path: "/资产池查询(国泰)",
+  name: "fundProviderMgmt国泰大搜车资产池查询",
+  component: () => import('@/views/client/fundProviderMgmt/国泰大搜车/资产池查询(国泰)/index.vue')
+}, {
+  path: "/client/guoTaiMgmt/assetPoolQuery",
+  name: "fundProviderMgmt国泰大搜车资产池查询(国泰)订单资产查询",
+  component: () => import('@/views/client/fundProviderMgmt/国泰大搜车/资产池查询(国泰)/guoTaiMgmtassetPoolQuery/index.vue')
+}, {
+  path: "/client/guoTaiMgmt/fundProviderRepayTransactionFlow",
+  name: "fundProviderMgmt国泰大搜车客户还款交易流水",
+  component: () => import('@/views/client/fundProviderMgmt/国泰大搜车/guoTaiMgmtfundProviderRepayTransactionFlow/index.vue')
+}, {
+  path: "/client/guoTaiMgmt/assetMonitor",
+  name: "fundProviderMgmt国泰大搜车资产监控",
+  component: () => import('@/views/client/fundProviderMgmt/国泰大搜车/guoTaiMgmtassetMonitor/index.vue')
+}, {
+  path: "/client/logisticsPartyMgmt",
+  name: "logisticsMgmt物流管理",
+  component: () => import('@/views/client/logisticsMgmt/logisticsPartyMgmt/index.vue')
+}, {
+  path: "/client/businessA",
+  name: "businessMgmt经纪人模式",
+  component: () => import('@/views/client/businessMgmt/businessA/index.vue')
+}, {
+  path: "/client/partnerApplicationAList",
+  name: "businessMgmtbusinessA申请列表",
+  component: () => import('@/views/client/businessMgmt/businessA/partnerApplicationAList/index.vue')
+}, {
+  path: "/client/businessAList",
+  name: "businessMgmtbusinessA业务列表",
+  component: () => import('@/views/client/businessMgmt/businessA/businessAList/index.vue')
+}, {
+  path: "/client/businessB",
+  name: "businessMgmt代理商模式",
+  component: () => import('@/views/client/businessMgmt/businessB/index.vue')
+}, {
+  path: "/client/businessBList",
+  name: "businessMgmtbusinessB业务列表",
+  component: () => import('@/views/client/businessMgmt/businessB/businessBList/index.vue')
+}, {
+  path: "/client/businessC",
+  name: "businessMgmt经纪人分销模式",
+  component: () => import('@/views/client/businessMgmt/businessC/index.vue')
+}, {
+  path: "/client/partnerApplicationCList",
+  name: "businessMgmtbusinessC申请列表",
+  component: () => import('@/views/client/businessMgmt/businessC/partnerApplicationCList/index.vue')
+}, {
+  path: "/client/businessCListX",
+  name: "businessMgmtbusinessCX业务列表",
+  component: () => import('@/views/client/businessMgmt/businessC/businessCListX/index.vue')
+}, {
+  path: "/client/businessCListT",
+  name: "businessMgmtbusinessCT业务列表",
+  component: () => import('@/views/client/businessMgmt/businessC/businessCListT/index.vue')
+}, {
+  path: "/client/businessCList/relegationRule",
+  name: "businessMgmtbusinessC保级规则",
+  component: () => import('@/views/client/businessMgmt/businessC/businessCListrelegationRule/index.vue')
+}, {
+  path: "/client/xOrdinarySettlement",
+  name: "businessMgmtbusinessCX推广费用",
+  component: () => import('@/views/client/businessMgmt/businessC/xOrdinarySettlement/index.vue')
+}, {
+  path: "/client/TPromotionCost",
+  name: "businessMgmtbusinessCT推广费用",
+  component: () => import('@/views/client/businessMgmt/businessC/TPromotionCost/index.vue')
+}, {
+  path: "/client/settlementUpgradeApplication",
+  name: "businessMgmtbusinessC结算升级申请",
+  component: () => import('@/views/client/businessMgmt/businessC/settlementUpgradeApplication/index.vue')
+}, {
+  path: "/client/settlementUpgradeList",
+  name: "businessMgmtbusinessC结算升级列表",
+  component: () => import('@/views/client/businessMgmt/businessC/settlementUpgradeList/index.vue')
+}, {
+  path: "/client/commonUserMgmt",
+  name: "businessMgmt普通用户管理",
+  component: () => import('@/views/client/businessMgmt/commonUserMgmt/index.vue')
+}, {
+  path: "/client/allClues",
+  name: "onlineExtension全部线索",
+  component: () => import('@/views/client/onlineExtension/allClues/index.vue')
+}, {
+  path: "/client/offlineClues",
+  name: "onlineExtension转线下线索",
+  component: () => import('@/views/client/onlineExtension/offlineClues/index.vue')
+}, {
+  path: "/资金方管理",
+  name: "fundOperate资金方管理",
+  component: () => import('@/views/client/fundOperate/资金方管理/index.vue')
+}, {
+  path: "/client/funderMgmt",
+  name: "fundOperate资金方管理资金方管理",
+  component: () => import('@/views/client/fundOperate/资金方管理/funderMgmt/index.vue')
+}, {
+  path: "/client/fundSideProductTemplateList",
+  name: "fundOperate资金方管理资金产品模版管理",
+  component: () => import('@/views/client/fundOperate/资金方管理/fundSideProductTemplateList/index.vue')
+}, {
+  path: "/client/fundRouteMgmt",
+  name: "fundOperate资金方管理资金路由管理",
+  component: () => import('@/views/client/fundOperate/资金方管理/fundRouteMgmt/index.vue')
+}, {
+  path: "/client/assetLaunchMgmt",
+  name: "fundOperate资产投放管理",
+  component: () => import('@/views/client/fundOperate/assetLaunchMgmt/index.vue')
+}, {
+  path: "/client/fundRatioExpenseMgmt",
+  name: "fundOperate资金占用费管理",
+  component: () => import('@/views/client/fundOperate/fundRatioExpenseMgmt/index.vue')
+}, {
+  path: "/资方还款管理",
+  name: "fundOperate资方还款管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/index.vue')
+}, {
+  path: "/client/tongKangFunderRepay",
+  name: "fundOperate资方还款管理同康保证金",
+  component: () => import('@/views/client/fundOperate/资方还款管理/tongKangFunderRepay/index.vue')
+}, {
+  path: "/泉州交发保证金",
+  name: "fundOperate资方还款管理泉州交发保证金",
+  component: () => import('@/views/client/fundOperate/资方还款管理/泉州交发保证金/index.vue')
+}, {
+  path: "/client/quanZhouFunderRepay",
+  name: "fundOperate资方还款管理泉州交发保证金保证金还款",
+  component: () => import('@/views/client/fundOperate/资方还款管理/泉州交发保证金/quanZhouFunderRepay/index.vue')
+}, {
+  path: "/client/quanZhouFunderRefund",
+  name: "fundOperate资方还款管理泉州交发保证金保证金退款",
+  component: () => import('@/views/client/fundOperate/资方还款管理/泉州交发保证金/quanZhouFunderRefund/index.vue')
+}, {
+  path: "/client/jiaofaWithhold",
+  name: "fundOperate资方还款管理交发代扣管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/jiaofaWithhold/index.vue')
+}, {
+  path: "/欧力士还款管理",
+  name: "fundOperate资方还款管理欧力士还款管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/欧力士还款管理/index.vue')
+}, {
+  path: "/client/olsFunderRepay",
+  name: "fundOperate资方还款管理欧力士还款管理保证金还款",
+  component: () => import('@/views/client/fundOperate/资方还款管理/欧力士还款管理/olsFunderRepay/index.vue')
+}, {
+  path: "/client/olsFunderPay",
+  name: "fundOperate资方还款管理欧力士还款管理代收付管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/欧力士还款管理/olsFunderPay/index.vue')
+}, {
+  path: "/国搜还款管理",
+  name: "fundOperate资方还款管理国搜还款管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/国搜还款管理/index.vue')
+}, {
+  path: "/client/guoSouFunderRepayMgmt",
+  name: "fundOperate资方还款管理国搜还款管理代偿还款管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/国搜还款管理/guoSouFunderRepayMgmt/index.vue')
+}, {
+  path: "/client/guoSouFunderRefundMgmt",
+  name: "fundOperate资方还款管理国搜还款管理代偿退款管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/国搜还款管理/guoSouFunderRefundMgmt/index.vue')
+}, {
+  path: "/client/guoSouPaymentMgmt",
+  name: "fundOperate资方还款管理国搜还款管理代收付管理",
+  component: () => import('@/views/client/fundOperate/资方还款管理/国搜还款管理/guoSouPaymentMgmt/index.vue')
+}, {
+  path: "/资方结清管理",
+  name: "fundOperate资方结清管理",
+  component: () => import('@/views/client/fundOperate/资方结清管理/index.vue')
+}, {
+  path: "/client/quanZhouSettlement",
+  name: "fundOperate资方结清管理泉州交发",
+  component: () => import('@/views/client/fundOperate/资方结清管理/quanZhouSettlement/index.vue')
+}, {
+  path: "/client/guoSouSettlement",
+  name: "fundOperate资方结清管理国泰大搜车",
+  component: () => import('@/views/client/fundOperate/资方结清管理/guoSouSettlement/index.vue')
+}, {
+  path: "/client/olsSettlement",
+  name: "fundOperate资方结清管理欧力士",
+  component: () => import('@/views/client/fundOperate/资方结清管理/olsSettlement/index.vue')
+}, {
+  path: "/assetMgmts",
+  name: "assetsMgmt资产管理",
+  component: () => import('@/views/client/assetsMgmt/assetMgmts/index.vue')
+}, {
+  path: "/client/assetMgmt",
+  name: "assetsMgmtassetMgmts资产管理",
+  component: () => import('@/views/client/assetsMgmt/assetMgmts/assetMgmt/index.vue')
+}, {
+  path: "/client/storageMgmt",
+  name: "assetsMgmtassetMgmts存放地管理",
+  component: () => import('@/views/client/assetsMgmt/assetMgmts/storageMgmt/index.vue')
+}, {
+  path: "/client/netCarMgmt",
+  name: "assetsMgmt网约车管理",
+  component: () => import('@/views/client/assetsMgmt/netCarMgmt/index.vue')
+}, {
+  path: "/client/GPSNotRecycleDeviceMgmt",
+  name: "assetsMgmtGPS未回收设备管理",
+  component: () => import('@/views/client/assetsMgmt/GPSNotRecycleDeviceMgmt/index.vue')
+}, {
+  path: "/client/recordMgmt",
+  name: "assetsMgmt档案管理",
+  component: () => import('@/views/client/assetsMgmt/recordMgmt/index.vue')
+}]

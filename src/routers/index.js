@@ -4,6 +4,58 @@ import store from '@/store'
 
 Vue.use(Router)
 
+// const formatFlatteningMenu = (arr) => {
+// 	if (arr.length <= 0) return false;
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i].children) {
+//       arr[i].children.forEach(el => {
+//         let path = ''
+//         if (arr[i].key) {
+//           path = arr[i].key
+//         } else {
+//           path = arr[i].path.replace(/(\/|client)/g, '')
+//         }
+//         if (arr[i].parent) {
+//           el.parent = [...arr[i].parent, path]
+//         } else {
+//           el.parent = [path]
+//         }
+//       })
+// 			arr = arr.slice(0, i + 1).concat(arr[i].children, arr.slice(i + 1));
+// 		}
+// 	}
+// 	return arr;
+// }
+
+// const clientRoutes = []
+
+// const initClientRoutes = async () => {
+//   const userInfo = await store.dispatch('getUserInfo')
+//   if (userInfo && userInfo.userDto) {
+//     const menuList = await store.dispatch('getAuthList')
+//     const formatRouterList = formatFlatteningMenu(menuList)
+  
+//     let routeModules = []
+//     const moduleFiles = require.context('./routes', false, /\.router.js$/)
+//     moduleFiles.keys().forEach(key => {
+//       routeModules = routeModules.concat(moduleFiles(key).default)
+//     })
+  
+//     formatRouterList.forEach(el => {
+//       const item = routeModules.find(route => route.path === el.authPath)
+//       if (item) clientRoutes.push(item)
+//     })
+//   }
+// }
+
+// initClientRoutes()
+
+let routeModules = []
+const moduleFiles = require.context('./routes', false, /\.router.js$/)
+moduleFiles.keys().forEach(key => {
+  routeModules = routeModules.concat(moduleFiles(key).default)
+})
+
 const routes = [{
   path: '/',
   redirect: '/client/login',
@@ -15,9 +67,25 @@ const routes = [{
     needLogin: false
   }
 }, {
-  path: '/client/ybOrderMgmt',
-  name: 'ybOrderMgmt',
-  component: () => import('@/views/ybOrderMgmt'),
+  path: '/client',
+  name: 'client',
+  component: () => import('@/views/client'),
+  redirect: '/client/login',
+  children: [
+    ...routeModules,
+    {
+      path: '/client/:path(.*)*',
+      name: 'notFound',
+      component: () => import('@/views/error/404.vue'),
+    }
+  ]
+}, {
+  path: '/:path(.*)*',
+  name: 'notFound',
+  component: () => import('@/views/error/404.vue'),
+  meta: {
+    needLogin: false
+  },
 }]
 
 const router = new Router({
@@ -33,9 +101,8 @@ const crossroads = async (to, from, next) => {
   if (urlList.includes(to.path)) {
     next()
   } else {
-    const menuList = store.state.auth.menuList
     next({
-      path: menuList[Object.keys(menuList)[0]].children[0].path
+      name: 'login'
     })
   }
 }

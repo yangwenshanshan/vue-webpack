@@ -1,0 +1,2859 @@
+[
+  {
+    "title": "订单管理",
+    "key": "orderMgmt",
+    "children": [
+      {
+        "path": "/client/ybOrderMgmt",
+        "title": "订单管理",
+        "authPath": "/client/ybOrderMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/orderMgmt",
+        "title": "历史订单管理",
+        "authPath": "/client/orderMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/offlineOrderMgmt",
+        "title": "线下订单管理",
+        "authPath": "/client/offlineOrderMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "金融产品",
+    "key": "processMgmt",
+    "children": [
+      {
+        "path": "/client/newCarMgmt",
+        "title": "新车管理",
+        "authPath": "/client/newCarMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/usedCarMgmt",
+        "title": "转租车管理",
+        "authPath": "/client/usedCarMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/商品管理",
+        "title": "商品管理",
+        "authPath": "/商品管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/financeProductTemplateList",
+            "title": "产品模版管理",
+            "authPath": "/client/financeProductTemplateList",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/financeStrategyMgmt",
+            "title": "定价策略管理",
+            "authPath": "/client/financeStrategyMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "风控管理",
+    "key": "riskControlMgmt",
+    "children": [
+      {
+        "path": "/riskControl",
+        "title": "风控信审",
+        "authPath": "/风控信审",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/riskAgainReview",
+            "title": "风控复审",
+            "authPath": "/client/riskAgainReview",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/riskFaceReview",
+            "title": "风控面审",
+            "authPath": "/client/riskFaceReview",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/riskFinalReview",
+            "title": "风控终审",
+            "authPath": "/client/riskFinalReview",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/blacklist",
+            "title": "黑名单",
+            "authPath": "/黑名单",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/blacklistRecord",
+                "title": "黑名单记录",
+                "authPath": "/client/blacklistRecord",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/blacklistPool",
+                "title": "黑名单池",
+                "authPath": "/client/blacklistPool",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "path": "/client/whitelist",
+            "title": "白名单记录",
+            "authPath": "/client/whitelist",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/graylistPool",
+            "title": "灰名单",
+            "authPath": "/client/graylistPool",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/windControlRule",
+        "title": "风控管理规则",
+        "authPath": "/风控管理规则",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/blacklistRuleMgmt",
+            "title": "黑名单规则管理",
+            "authPath": "/client/blacklistRuleMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/whitelistRuleMgmt",
+            "title": "白名单规则管理",
+            "authPath": "/client/whitelistRuleMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/riskControlData",
+        "title": "风控数据",
+        "authPath": "/风控数据",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/informationReviewerData",
+            "title": "信审人员数据",
+            "authPath": "/client/informationReviewerData",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/companyStatistics",
+            "title": "公司信审统计",
+            "authPath": "/client/companyStatistics",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/hadClaimOrder",
+        "title": "已认领订单",
+        "authPath": "/client/hadClaimOrder",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "数据中心",
+    "key": "salesStatistics",
+    "children": [
+      {
+        "path": "/client/kpiReport",
+        "title": "KPI报表",
+        "authPath": "/KPI报表",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/kpiReport/businessRiskControlReport",
+            "title": "业务风控报表",
+            "authPath": "/client/kpiReport/businessRiskControlReport",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/kpiReport/businessSupportReport",
+            "title": "业务支持部",
+            "authPath": "/client/kpiReport/businessSupportReport",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/kpiReport/newCarPurchaseReport",
+            "title": "新车采购部",
+            "authPath": "/client/kpiReport/newCarPurchaseReport",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/salesReport",
+        "title": "交车报表",
+        "authPath": "/销售报表",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/companyOverallStatistics",
+            "title": "公司整体",
+            "authPath": "/client/companyOverallStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/cityManagerStatistics",
+            "title": "城市经理",
+            "authPath": "/client/cityManagerStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/teamLeaderStatistics",
+            "title": "团队长",
+            "authPath": "/client/teamLeaderStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/salesmanStatistics",
+            "title": "业务员",
+            "authPath": "/client/salesmanStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/partnerStatistics",
+            "title": "合伙人",
+            "authPath": "/client/partnerStatistics",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/onlineSales",
+        "title": "线上销售",
+        "authPath": "/线上销售",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/onlineSalesOverall",
+            "title": "线上销售整体",
+            "authPath": "/client/onlineSalesOverall",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/onlineSalesPersonal",
+            "title": "线上销售个人",
+            "authPath": "/client/onlineSalesPersonal",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/businessStatistics",
+        "title": "业务部报表",
+        "authPath": "/业务部报表",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/dataStatistics",
+            "title": "进件统计",
+            "authPath": "/client/dataStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessIndicatorStatistics",
+            "title": "业务指标统计",
+            "authPath": "/client/businessIndicatorStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/reviewerBusinessIndicatorStatistics",
+            "title": "信审业务指标统计",
+            "authPath": "/client/reviewerBusinessIndicatorStatistics",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/partnerBusinessIndicatorStatistics",
+            "title": "合伙人业务指标统计",
+            "authPath": "/client/partnerBusinessIndicatorStatistics",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/postLoanReport",
+        "title": "贷后报表",
+        "authPath": "/client/postLoanReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/repaymentReport",
+        "title": "还款情况表",
+        "authPath": "/client/repaymentReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/subletMonitoring",
+        "title": "采购交付清收转租监控",
+        "authPath": "/client/subletMonitoring",
+        "isShow": false,
+        "needWrap": true,
+        "children": []
+      },
+      {
+        "path": "/client/assetQuality",
+        "title": "资产质量分析",
+        "authPath": "/资产质量分析",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/fulfillPeriods",
+            "title": "履约期数资产质量",
+            "authPath": "/client/fulfillPeriods",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/assetQualityReport",
+            "title": "新车转租车资产质量",
+            "authPath": "/client/assetQualityReport",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/deliveryCarContrastReport",
+            "title": "月订单同期对比",
+            "authPath": "/client/deliveryCarContrastReport",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/vehicleCityDistribution",
+            "title": "库存车辆城市分布",
+            "authPath": "/client/vehicleCityDistribution",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/carAssetsQualityAnalysis",
+            "title": "上牌地资产质量分析",
+            "authPath": "/client/carAssetsQualityAnalysis",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/collectionChannelStatistics",
+        "title": "业务收款渠道统计",
+        "authPath": "/client/collectionChannelStatistics",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/collectionDataStatistics",
+        "title": "业务收款数据统计",
+        "authPath": "/client/collectionDataStatistics",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/violationStatistics",
+        "title": "违章统计",
+        "authPath": "/client/violationStatistics",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/marketExpenseReport",
+        "title": "市场营销费用报表",
+        "authPath": "/client/marketExpenseReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/dataExportTaskMgmt",
+        "title": "数据导出任务管理",
+        "authPath": "/client/dataExportTaskMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/vintageReport",
+        "title": "vintage报表",
+        "authPath": "/client/vintageReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/cityManagerProfitReport",
+        "title": "城市经理利润报表",
+        "authPath": "/client/cityManagerProfitReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/collectionQualityStatistics",
+        "title": "客户回款质量统计",
+        "authPath": "/client/collectionQualityStatistics",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/carYearCheckReport",
+        "title": "车辆信息统计表",
+        "authPath": "/client/carYearCheckReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/tContributionValueReport",
+        "title": "T贡献值报表",
+        "authPath": "/client/tContributionValueReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/profitReport",
+        "title": "利润报表",
+        "authPath": "/client/profitReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/assetsReport",
+        "title": "资产负债表",
+        "authPath": "/client/assetsReport",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/capitalMaintenance",
+        "title": "资金运维表",
+        "authPath": "/client/capitalMaintenance",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/managementData",
+        "title": "资方报表数据",
+        "authPath": "/资方报表数据",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/summaryData",
+            "title": "汇总数据",
+            "authPath": "/client/summaryData",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessData",
+            "title": "业务数据",
+            "authPath": "/client/businessData",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/loanData",
+            "title": "贷款数据",
+            "authPath": "/client/loanData",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/customerPortrait",
+            "title": "客户画像",
+            "authPath": "/client/customerPortrait",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/FPDData",
+            "title": "FPD数据",
+            "authPath": "/client/FPDData",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/staticDataPool",
+            "title": "静态数据池",
+            "authPath": "/client/staticDataPool",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/rollRata",
+            "title": "滚动率",
+            "authPath": "/client/rollRata",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/recallRata",
+            "title": "催回率",
+            "authPath": "/client/recallRata",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "账户管理",
+    "key": "accountMgmt",
+    "children": [
+      {
+        "path": "/client/realNameList",
+        "title": "实名认证申请列表",
+        "authPath": "/client/realNameList",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/adminMgmt",
+        "title": "管理员管理",
+        "authPath": "/client/adminMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/synthesizeManagerMgmt",
+        "title": "综合岗管理",
+        "authPath": "/client/synthesizeManagerMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/vehicleServiceMgmt",
+        "title": "车务管理",
+        "authPath": "/client/vehicleServiceMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/channelAdminMgmt",
+        "title": "渠道管理员管理",
+        "authPath": "/client/channelAdminMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/bankAdminMgmt",
+        "title": "银行管理员管理",
+        "authPath": "/client/bankAdminMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/channelMgmt",
+        "title": "渠道管理",
+        "authPath": "/client/channelMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/insuranceChannelMgmt",
+        "title": "保险渠道管理",
+        "authPath": "/client/insuranceChannelMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "财务管理",
+    "key": "financeMgmt",
+    "children": [
+      {
+        "path": "/client/bankPay",
+        "title": "银行打款",
+        "authPath": "/client/bankPay",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/capitalFlow",
+        "title": "资金流水",
+        "authPath": "/client/capitalFlow",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/withdrawRequest",
+        "title": "提现申请",
+        "authPath": "/client/withdrawRequest",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/repayMgmt",
+        "title": "还款管理",
+        "authPath": "/client/repayMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/partnerRouterMgmt",
+        "title": "合作商路由管理",
+        "authPath": "/client/partnerRouterMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/funderRepayMgmt",
+        "title": "资方还款管理",
+        "authPath": "/client/funderRepayMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/appropriationMgmt",
+        "title": "拨款管理",
+        "authPath": "/client/appropriationMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/paymentMgmt",
+        "title": "付款管理",
+        "authPath": "/client/paymentMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/receiptConfirmation",
+        "title": "收款管理",
+        "authPath": "/client/receiptConfirmation",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/receiptTask",
+        "title": "收款任务",
+        "authPath": "/client/receiptTask",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/agentCommissionMgmt",
+        "title": "代理商分成",
+        "authPath": "/client/agentCommissionMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/commissionPay",
+        "title": "T推广费用打款",
+        "authPath": "/client/commissionPay",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/incomeVerifyStatistics",
+        "title": "收入对账统计",
+        "authPath": "/client/incomeVerifyStatistics",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/withholdMgmt",
+        "title": "代扣管理",
+        "authPath": "/client/withholdMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/payMgmt",
+        "title": "支付管理",
+        "authPath": "/client/payMgmt",
+        "isShow": false,
+        "tabCount": true,
+        "children": []
+      },
+      {
+        "path": "/client/contactUnitMgmt",
+        "title": "往来单位管理",
+        "authPath": "/client/contactUnitMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/platformServiceFee",
+        "title": "平台服务费统计",
+        "authPath": "/client/platformServiceFee",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/voucherManagement",
+        "title": "凭证管理",
+        "authPath": "/client/voucherManagement",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/voucherGenerate",
+            "title": "支付凭证生成",
+            "authPath": "/client/voucherGenerate",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/enterAccount",
+            "title": "入账凭证生成",
+            "authPath": "/client/enterAccount",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/costMgmt",
+            "title": "成本结转管理",
+            "authPath": "/client/costMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/ordinarySettlement",
+        "title": "C模式推广费用",
+        "authPath": "/client/ordinarySettlement",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/xPrivateSettlement",
+            "title": "X普通结算",
+            "authPath": "/client/xPrivateSettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/tOrdinarySettlement",
+            "title": "T普通结算",
+            "authPath": "/client/tOrdinarySettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/xToPublicSettlement",
+            "title": "X对公结算",
+            "authPath": "/client/xToPublicSettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/tToPublicSettlement",
+            "title": "T对公结算",
+            "authPath": "/client/tToPublicSettlement",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/BPromotionCost",
+        "title": "B模式推广费用",
+        "authPath": "/client/BPromotionCost",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/blocMainMgmt",
+        "title": "集团内主体管理",
+        "authPath": "/client/blocMainMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/interiorContactUnitMgmt",
+        "title": "内部往来",
+        "authPath": "/client/interiorContactUnitMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "系统管理",
+    "key": "systemMgmt",
+    "children": [
+      {
+        "path": "/client/commissionModelList",
+        "title": "佣金模型管理",
+        "authPath": "/client/commissionModelList",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/ownershipList",
+        "title": "上牌主体管理",
+        "authPath": "/client/ownershipList",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/opreateRecordList",
+        "title": "操作记录",
+        "authPath": "/client/opreateRecordList",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/smsRecordList",
+        "title": "短信记录",
+        "authPath": "/client/smsRecordList",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/fourFactorMgmt",
+        "title": "三要素四要素管理",
+        "authPath": "/client/fourFactorMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/powerMgmt",
+        "title": "权限管理",
+        "authPath": "/新权限管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/roleMgmt",
+            "title": "角色管理",
+            "authPath": "/client/roleMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/menuMgmt",
+            "title": "菜单管理",
+            "authPath": "/client/menuMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/publicAuth",
+            "title": "公共接口",
+            "authPath": "/client/publicAuth",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/protocolMgmt",
+        "title": "协议管理",
+        "authPath": "/client/protocolMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/receivePayment",
+        "title": "收款管理",
+        "authPath": "/收款管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/alipayQrcodeMgmt",
+            "title": "二维码管理",
+            "authPath": "/client/alipayQrcodeMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/wxPayMerchantMgmt",
+            "title": "微信商户号管理",
+            "authPath": "/client/wxPayMerchantMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/appConfig",
+        "title": "App配置",
+        "authPath": "/App配置",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/homePageConfigMgmt",
+            "title": "App首页配置",
+            "authPath": "/client/homePageConfigMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/personalSortConfigMgmt",
+            "title": "个性化分类配置",
+            "authPath": "/client/personalSortConfigMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/appVersionMgmt",
+            "title": "App版本管理",
+            "authPath": "/client/appVersionMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/appUpgradeMgmt",
+            "title": "APP升级管理",
+            "authPath": "/client/appUpgradeMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/bannerConfig",
+        "title": "轮播图配置",
+        "authPath": "/client/bannerConfig",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/exportTaskMgmt",
+        "title": "导出任务管理",
+        "authPath": "/client/exportTaskMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/urgentOperateMgmt",
+        "title": "紧急操作",
+        "authPath": "/紧急操作",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/replaceFile",
+            "title": "文件替换",
+            "authPath": "/client/replaceFile",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/dataDictionary",
+        "title": "数据字典",
+        "authPath": "/client/dataDictionary",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/excelTool",
+        "title": "excel工具",
+        "authPath": "/client/excelTool",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/humanResources",
+            "title": "人力资源",
+            "authPath": "/client/humanResources",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/funderWidgets",
+            "title": "资方小工具",
+            "authPath": "/client/funderWidgets",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/contractMgmt",
+        "title": "合同管理",
+        "authPath": "/client/contractMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/contractParams",
+            "title": "合同参数",
+            "authPath": "/client/contractParams",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/contractTemplate",
+            "title": "合同模板",
+            "authPath": "/client/contractTemplate",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/contractCombination",
+            "title": "合同套件",
+            "authPath": "/client/contractCombination",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/blackListMgmt",
+        "title": "黑名单管理",
+        "authPath": "/client/blackListMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/logoutPool",
+        "title": "注销池",
+        "authPath": "/client/logoutPool",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "流程管理",
+    "key": "standingBookMgmt",
+    "children": [
+      {
+        "path": "/client/purchaseCarWork",
+        "title": "采购交车工作台",
+        "authPath": "/client/purchaseCarWork",
+        "isShow": false,
+        "isVueRouter": false,
+        "children": []
+      },
+      {
+        "path": "/supplyChainMgmt",
+        "title": "供应链管理",
+        "authPath": "/供应链管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/carsPurchaseMgmt",
+            "title": "车辆采购管理",
+            "authPath": "/车辆采购管理",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/purchaseTask",
+                "title": "采购任务分配",
+                "authPath": "/client/purchaseTask",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/purchaseLegalAudit",
+                "title": "法务合同审核",
+                "authPath": "/client/purchaseLegalAudit",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/purchaseAppropriationApplication",
+                "title": "采购拨款申请",
+                "authPath": "/client/purchaseAppropriationApplication",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/purchaseFundApplication",
+                "title": "采购用款申请",
+                "authPath": "/client/purchaseFundApplication",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/printingForPurchaseContracts",
+                "title": "采购合同用印",
+                "authPath": "/client/printingForPurchaseContracts",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/cooperationCostMgmt",
+                "title": "合作费用管理",
+                "authPath": "/client/cooperationCostMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/supplierMgmt",
+                "title": "供应商管理",
+                "authPath": "/client/supplierMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/purchaseCommissionMgmt",
+                "title": "采购返佣管理",
+                "authPath": "/client/purchaseCommissionMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/purchaseIncreaseMgmt",
+                "title": "采购增收管理",
+                "authPath": "/client/purchaseIncreaseMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/client/purchaseTaxMgmtNew",
+        "title": "购置税管理",
+        "authPath": "/client/purchaseTaxMgmtNew",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/returnCommissionMgmt",
+        "title": "推广费用管理",
+        "authPath": "/client/returnCommissionMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/returnCommissionNewMgmt",
+        "title": "推广费用管理(新)",
+        "authPath": "/client/returnCommissionNewMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/xReturnCommission",
+            "title": "X推广费用",
+            "authPath": "/client/xReturnCommission",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/tReturnCommission",
+            "title": "T推广费用",
+            "authPath": "/client/tReturnCommission",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/GPS_Mgmt",
+        "title": "GPS管理",
+        "authPath": "/GPS管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/GPSCompanyMgmt",
+            "title": "GPS公司管理",
+            "authPath": "/client/GPSCompanyMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/GPSMgmt",
+            "title": "GPS管理",
+            "authPath": "/client/GPSMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/GPSPositionMgmt",
+            "title": "GPS位置管理",
+            "authPath": "/client/GPSPositionMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/carOperationMgmt",
+        "title": "车辆运营管理",
+        "authPath": "/车辆运营管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/licenseMgmt",
+            "title": "上牌管理",
+            "authPath": "/client/licenseMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/deliveryMgmt",
+            "title": "交车管理",
+            "authPath": "/client/deliveryMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/operationMgmt",
+        "title": "运营管理",
+        "authPath": "/运营管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/payBillMgmt",
+            "title": "出账管理",
+            "authPath": "/client/payBillMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/insuranceCompanyMgmt",
+        "title": "保险管理",
+        "authPath": "/保险管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/insuranceCompanyMgmt",
+            "title": "保险公司管理",
+            "authPath": "/client/insuranceCompanyMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/insurancePurchaseMgmt",
+            "title": "保险购买管理",
+            "authPath": "/client/insurancePurchaseMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/insuranceCostMgmt",
+            "title": "保险用款管理",
+            "authPath": "/client/insuranceCostMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/insuranceParameterMgmt",
+            "title": "保险台账管理",
+            "authPath": "/client/insuranceParameterMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/insuranceRebatesMgmt",
+            "title": "保险返佣管理",
+            "authPath": "/client/insuranceRebatesMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/newCarOffShelfMgmt",
+        "title": "新车金融产品上架",
+        "authPath": "/client/newCarOffShelfMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/logistics",
+        "title": "物流管理",
+        "authPath": "/物流管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/logisticsMgmtNew",
+            "title": "物流管理",
+            "authPath": "/client/logisticsMgmtNew",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/logisticsProvidersMgmt",
+            "title": "物流商管理",
+            "authPath": "/client/logisticsProvidersMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/expenseApproval",
+            "title": "费用修改审核",
+            "authPath": "/client/expenseApproval",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/mortgageMgmt",
+        "title": "抵押管理",
+        "authPath": "/client/mortgageMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/mortgageOrder",
+            "title": "抵押解抵押工单",
+            "authPath": "/client/mortgageOrder",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/mortgageSupplier",
+            "title": "供应商管理",
+            "authPath": "/client/mortgageSupplier",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/mortgageCost",
+            "title": "费用申请",
+            "authPath": "/client/mortgageCost",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/mortgageCity",
+            "title": "抵押城市管理",
+            "authPath": "/client/mortgageCity",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "租后管理",
+    "key": "postRentingMgmt",
+    "children": [
+      {
+        "path": "/client/repaymentMgmt",
+        "title": "客户还款管理",
+        "authPath": "/client/repaymentMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/collectioSsurface",
+        "title": "催收情况表",
+        "authPath": "/client/collectioSsurface",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/repaymentOutSourceMgmt",
+        "title": "委外还款管理",
+        "authPath": "/client/repaymentOutSourceMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/violationMgmt",
+        "title": "违章管理",
+        "authPath": "/违章管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/violationMgmt",
+            "title": "违章信息查询",
+            "authPath": "/client/violationMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/violationFeeMgmt",
+            "title": "违章违约金管理(清收车)",
+            "authPath": "/client/violationFeeMgmt",
+            "isShow": false,
+            "needWrap": true,
+            "children": []
+          },
+          {
+            "path": "/client/mailExchange",
+            "title": "邮件往来",
+            "authPath": "/client/mailExchange",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/receiptPayment",
+            "title": "收票打款",
+            "authPath": "/client/receiptPayment",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/violationFeeRecovery",
+            "title": "违章违约金追款",
+            "authPath": "/client/violationFeeRecovery",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/classificationInfoMgmt",
+            "title": "分类信息管理",
+            "authPath": "/client/classificationInfoMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/exemplaryCaseMgmt",
+        "title": "专案管理",
+        "authPath": "/client/exemplaryCaseMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/writtenLetterMgmt",
+        "title": "书面函管理",
+        "authPath": "/client/writtenLetterMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/clearingMgmt",
+        "title": "清收管理",
+        "authPath": "/client/clearingMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/generalLiquidateMgmt",
+            "title": "普通清收管理",
+            "authPath": "/client/generalLiquidateMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/difficultLiquidateMgmt",
+            "title": "疑难清收管理",
+            "authPath": "/client/difficultLiquidateMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/riskControlLiquidateMgmt",
+            "title": "清收风控管理",
+            "authPath": "/client/riskControlLiquidateMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/keyLiquidateMgmt",
+            "title": "清收钥匙管理",
+            "authPath": "/client/keyLiquidateMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/reasonLiquidateMgmt",
+            "title": "清收原因管理",
+            "authPath": "/client/reasonLiquidateMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/terminateContractMgmt",
+        "title": "解约管理",
+        "authPath": "/client/terminateContractMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/prepareMgmt",
+        "title": "整备管理",
+        "authPath": "/client/prepareMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/reletMgmt",
+        "title": "续租管理",
+        "authPath": "/client/reletMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/vehicleMonitorMgmt",
+        "title": "车辆监控管理",
+        "authPath": "/车辆监控管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/systemMonitorMgmt",
+            "title": "系统监控管理",
+            "authPath": "/client/systemMonitorMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/manualMonitorMgmt",
+            "title": "人工监控管理",
+            "authPath": "/client/manualMonitorMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/monitoringRulesMgmt",
+            "title": "监控规则管理",
+            "authPath": "/client/monitoringRulesMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "settleMgmt",
+        "title": "结清管理",
+        "authPath": "/结清管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/settleMgmt",
+            "title": "提前结清",
+            "authPath": "/client/settleMgmt",
+            "isShow": false
+          },
+          {
+            "path": "/client/mediateSettle",
+            "title": "调解结清",
+            "authPath": "/client/mediateSettle",
+            "isShow": false
+          },
+          {
+            "path": "/client/mediateSettleSupplierMgmt",
+            "title": "供应商管理",
+            "authPath": "/client/mediateSettleSupplierMgmt",
+            "isShow": false
+          }
+        ]
+      },
+      {
+        "path": "/client/assetTransferMgmt",
+        "title": "资产过户管理",
+        "authPath": "/client/assetTransferMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/assetTransferMgmt",
+            "title": "资产过户管理",
+            "authPath": "/client/assetTransferMgmt",
+            "isShow": false
+          },
+          {
+            "path": "/client/materialKitMgmt",
+            "title": "材料套件管理",
+            "authPath": "/client/materialKitMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/carInterpellationMgmt",
+        "title": "催告管理",
+        "authPath": "/client/carInterpellationMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/assetContractMgmt",
+        "title": "资产签约",
+        "authPath": "/client/assetContractMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/contractBatchMgmt",
+            "title": "签约批次管理",
+            "authPath": "/client/contractBatchMgmt",
+            "isShow": false
+          },
+          {
+            "path": "/client/contractTaskMgmt",
+            "title": "签约任务管理",
+            "authPath": "/client/contractTaskMgmt",
+            "isShow": false
+          }
+        ]
+      },
+      {
+        "path": "/client/insurancePremiumMgmt",
+        "title": "保费管理",
+        "authPath": "/client/insurancePremiumMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/insuranceRepayment",
+            "title": "保费还款管理",
+            "authPath": "/client/insuranceRepayment",
+            "isShow": false
+          },
+          {
+            "path": "/client/insuranceApply",
+            "title": "我的申请",
+            "authPath": "/client/insuranceApply",
+            "isShow": false
+          },
+          {
+            "path": "/client/insuranceApprove",
+            "title": "审批",
+            "authPath": "/client/insuranceApprove",
+            "isShow": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "资方管理",
+    "key": "fundProviderMgmt",
+    "children": [
+      {
+        "path": "/尚诚",
+        "title": "尚诚",
+        "authPath": "/尚诚",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/资金投放审批(尚诚)",
+            "title": "资金投放审批",
+            "authPath": "/资金投放审批(尚诚)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/shangCheng/fundPutInApproval",
+                "title": "订单投放审批",
+                "authPath": "/client/shangCheng/fundPutInApproval",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-approval"
+          },
+          {
+            "path": "/放款管理(尚诚)",
+            "title": "放款管理",
+            "authPath": "/放款管理(尚诚)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/shangCheng/loanMgmt",
+                "title": "订单放款管理",
+                "authPath": "/client/shangCheng/loanMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/收款确认(尚诚)",
+            "title": "收款确认",
+            "authPath": "/收款确认(尚诚)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/shangCheng/assetPackageReceiptConfirmation",
+                "title": "资产包收款确认",
+                "authPath": "/client/shangCheng/assetPackageReceiptConfirmation",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-receipt"
+          },
+          {
+            "path": "/client/shangCheng/settlementMgmt",
+            "title": "结清管理",
+            "authPath": "/client/shangCheng/settlementMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-fund-settlement",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/资产池查询(尚诚)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(尚诚)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/shangCheng/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/shangCheng/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool"
+          },
+          {
+            "path": "/再融资管理(尚诚)",
+            "title": "再融资管理",
+            "authPath": "/再融资管理(尚诚)",
+            "isShow": false,
+            "icon": "el-icon-refinance-mgmt",
+            "children": [
+              {
+                "path": "/client/shangCheng/financingProductsMgmt",
+                "title": "融资产品管理",
+                "authPath": "/client/shangCheng/financingProductsMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/shangCheng/assetPackageDeliveryMgmt",
+                "title": "资产包投放管理",
+                "authPath": "/client/shangCheng/assetPackageDeliveryMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/shangCheng/assetPackageRepayment",
+                "title": "资产包还款",
+                "authPath": "/client/shangCheng/assetPackageRepayment",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/shangCheng/assetPackageQuery",
+                "title": "资产包查询",
+                "authPath": "/client/shangCheng/assetPackageQuery",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/shangCheng/assetReplace",
+                "title": "资产替换",
+                "authPath": "/client/shangCheng/assetReplace",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/shangCheng/assetPackageAssetSettlement",
+                "title": "资产包资产结清",
+                "authPath": "/client/shangCheng/assetPackageAssetSettlement",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "path": "/client/shangCheng/dataReport",
+            "title": "数据报表",
+            "authPath": "/client/shangCheng/dataReport",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-data-report-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/shangCheng/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/shangCheng/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          }
+        ]
+      },
+      {
+        "path": "/同康",
+        "title": "同康",
+        "authPath": "/同康",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/资金投放审批(同康)",
+            "title": "资金投放审批",
+            "authPath": "/资金投放审批(同康)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/tongKang/fundPutInApproval",
+                "title": "订单投放审批",
+                "authPath": "/client/tongKang/fundPutInApproval",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-approval"
+          },
+          {
+            "path": "/放款管理(同康)",
+            "title": "放款管理",
+            "authPath": "/放款管理(同康)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/tongKang/loanMgmt",
+                "title": "订单放款管理",
+                "authPath": "/client/tongKang/loanMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/client/tongKang/receiptConfirmation",
+            "title": "收款确认",
+            "authPath": "/client/tongKang/receiptConfirmation",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-fund-receipt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/tongKang/settlementMgmt",
+            "title": "结清管理",
+            "authPath": "/client/tongKang/settlementMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-fund-settlement",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/资产池查询(同康)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(同康)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/tongKang/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/tongKang/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/tongKang/fundProviderRepayTransactionFlow",
+            "title": "客户还款交易流水",
+            "authPath": "/client/tongKang/fundProviderRepayTransactionFlow",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-fund-provider-pepay",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/tongKang/dataReport",
+            "title": "数据报表",
+            "authPath": "/client/tongKang/dataReport",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-data-report-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/tongKang/exportTaskMgmt",
+            "title": "导出任务管理",
+            "authPath": "/client/tongKang/exportTaskMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-export-task-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/tongKang/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/tongKang/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          }
+        ]
+      },
+      {
+        "path": "/建德",
+        "title": "建德",
+        "authPath": "/建德",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/资金投放审批",
+            "title": "资金投放审批",
+            "authPath": "/资金投放审批(建德)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jianDe/assetPackageDelivery",
+                "title": "资产包投放审批",
+                "authPath": "/client/jianDe/assetPackageDelivery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-approval"
+          },
+          {
+            "path": "/放款管理",
+            "title": "放款管理",
+            "authPath": "/放款管理(建德)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jianDe/loanMgmt",
+                "title": "资产包放款管理",
+                "authPath": "/client/jianDe/loanMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/资产池查询",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(建德)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jianDe/assetPackageQuery",
+                "title": "资产包资产查询",
+                "authPath": "/client/jianDe/assetPackageQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/还款交易流水",
+            "title": "还款交易流水",
+            "authPath": "/还款交易流水(建德)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jianDe/repaymentFlow",
+                "title": "资产包还款交易流水",
+                "authPath": "/client/jianDe/repaymentFlow",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-provider-pepay"
+          },
+          {
+            "path": "/client/jianDe/dataReport",
+            "title": "数据报表",
+            "authPath": "/client/jianDe/dataReport",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-data-report-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jianDe/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/jianDe/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          }
+        ]
+      },
+      {
+        "path": "/jiaofaMgmt",
+        "title": "泉州交发融租",
+        "authPath": "/jiaofaMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/jiaofaMgmt/contractSignedMgmt",
+            "title": "合同签署管理",
+            "authPath": "/client/jiaofaMgmt/contractSignedMgmt",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-tickets",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/资金投放审批(泉州交发)",
+            "title": "资金投放审批",
+            "authPath": "/资金投放审批(泉州交发)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiaofa/fundPutInApproval",
+                "title": "订单投放审批",
+                "authPath": "/client/jiaofa/fundPutInApproval",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/assetPackagePlacementApproval",
+                "title": "资产包投放审批",
+                "authPath": "/client/jiaofa/assetPackagePlacementApproval",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-approval"
+          },
+          {
+            "path": "/放款管理(泉州交发)",
+            "title": "放款管理",
+            "authPath": "/放款管理(泉州交发)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiaofa/loanMgmt",
+                "title": "订单放款管理",
+                "authPath": "/client/jiaofa/loanMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/assetPackageLoanMgmt",
+                "title": "资产包放款管理",
+                "authPath": "/client/jiaofa/assetPackageLoanMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/对账管理(泉州交发)",
+            "title": "对账管理",
+            "authPath": "/对账管理(泉州交发)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiaofa/repayment",
+                "title": "保证金还款",
+                "authPath": "/client/jiaofa/repayment",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/refund",
+                "title": "保证金退款",
+                "authPath": "/client/jiaofa/refund",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/settlementMgmt",
+                "title": "结清管理",
+                "authPath": "/client/jiaofa/settlementMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/assetPackageAssetSettlement",
+                "title": "资产包资产结清",
+                "authPath": "/client/jiaofa/assetPackageAssetSettlement",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-settlement"
+          },
+          {
+            "path": "/资产池查询(泉州交发)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(泉州交发)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiaofa/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/jiaofa/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofa/assetPackageQuery",
+                "title": "资产包查询",
+                "authPath": "/client/jiaofa/assetPackageQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool"
+          },
+          {
+            "path": "/client/jiaofa/fundProviderRepayTransactionFlow",
+            "title": "客户还款交易流水",
+            "authPath": "/client/jiaofa/fundProviderRepayTransactionFlow",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-fund-provider-pepay",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiaofa/dataReport",
+            "title": "数据报表",
+            "authPath": "/client/jiaofa/dataReport",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-data-report-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiaofa/exportTaskMgmt",
+            "title": "导出任务管理",
+            "authPath": "/client/jiaofa/exportTaskMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-export-task-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiaofaMgmt/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/jiaofaMgmt/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiaofa/dataStatement",
+            "title": "数据报表",
+            "authPath": "/client/jiaofa/dataStatement",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiaofaMgmt/customerRepaymentStatus",
+                "title": "资产包客户还款情况表",
+                "needWrap": true,
+                "authPath": "/client/jiaofaMgmt/customerRepaymentStatus",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofaMgmt/customerRepaymentStatus2",
+                "title": "资产包客户还款表",
+                "needWrap": true,
+                "authPath": "/client/jiaofaMgmt/customerRepaymentStatus2",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/jiaofaMgmt/comparisonOfAssetPackage",
+                "title": "资产包同期订单对比",
+                "authPath": "/client/jiaofaMgmt/comparisonOfAssetPackage",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-data-report-mgmt"
+          }
+        ]
+      },
+      {
+        "path": "/oulishiMgmt",
+        "title": "欧力士",
+        "authPath": "/oulishiMgmt",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/oulishiMgmt/riskFirstReview",
+            "title": "风控初审管理",
+            "authPath": "/client/oulishiMgmt/riskFirstReview",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-tickets",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/oulishiMgmt/contractSignedMgmt",
+            "title": "合同签署管理",
+            "authPath": "/client/oulishiMgmt/contractSignedMgmt",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-tickets",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/资金投放审批(欧力士)",
+            "title": "资金投放审批",
+            "authPath": "/资金投放审批(欧力士)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/oulishiMgmt/fundPutInApproval",
+                "title": "订单投放审批",
+                "authPath": "/client/oulishiMgmt/fundPutInApproval",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-approval"
+          },
+          {
+            "path": "/放款管理(欧力士)",
+            "title": "放款管理",
+            "authPath": "/放款管理(欧力士)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/oulishiMgmt/loanMgmt",
+                "title": "订单放款管理",
+                "authPath": "/client/oulishiMgmt/loanMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-loan"
+          },
+          {
+            "path": "/对账管理(欧力士)",
+            "title": "对账管理",
+            "authPath": "/对账管理(欧力士)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/oulishi/repayment",
+                "title": "保证金还款",
+                "authPath": "/client/oulishi/repayment",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/oulishi/refund",
+                "title": "代收付管理",
+                "authPath": "/client/oulishi/refund",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/oulishi/settlementMgmt",
+                "title": "结清管理",
+                "authPath": "/client/oulishi/settlementMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-settlement"
+          },
+          {
+            "path": "/资产池查询(欧力士)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(欧力士)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/oulishiMgmt/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/oulishiMgmt/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool"
+          },
+          {
+            "path": "/client/oulishiMgmt/fundProviderRepayTransactionFlow",
+            "title": "客户还款交易流水",
+            "authPath": "/client/oulishiMgmt/fundProviderRepayTransactionFlow",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-fund-provider-pepay",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/oulishiMgmt/monitor",
+            "title": "资产监控",
+            "authPath": "/client/oulishiMgmt/monitor",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/oulishiMgmt/assetMonitorOrder",
+                "title": "订单资产监控",
+                "authPath": "/client/oulishiMgmt/assetMonitorOrder",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/oulishiMgmt/assetMonitor",
+                "title": "资产包资产监控",
+                "authPath": "/client/oulishiMgmt/assetMonitor",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-asset-monitor-mgmt"
+          }
+        ]
+      },
+      {
+        "path": "/玖亿",
+        "title": "玖亿",
+        "authPath": "/玖亿",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/jiuYi/settlementMgmt",
+            "title": "结清管理",
+            "authPath": "/client/jiuYi/settlementMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-fund-settlement",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/资产池查询(玖亿)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(玖亿)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/jiuYi/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/jiuYi/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool"
+          },
+          {
+            "path": "/client/jiuYi/fundProviderRepayTransactionFlow",
+            "title": "客户还款交易流水",
+            "authPath": "/client/jiuYi/fundProviderRepayTransactionFlow",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-fund-provider-pepay",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiuYi/exportTaskMgmt",
+            "title": "导出任务管理",
+            "authPath": "/client/jiuYi/exportTaskMgmt",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-export-task-mgmt",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/jiuYi/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/jiuYi/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          }
+        ]
+      },
+      {
+        "path": "/国泰大搜车",
+        "title": "国泰大搜车",
+        "authPath": "/国泰大搜车",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/资产池查询(国泰)",
+            "title": "资产池查询",
+            "authPath": "/资产池查询(国泰)",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/guoTaiMgmt/assetPoolQuery",
+                "title": "订单资产查询",
+                "authPath": "/client/guoTaiMgmt/assetPoolQuery",
+                "isShow": false,
+                "children": []
+              }
+            ],
+            "icon": "el-icon-fund-asset-pool"
+          },
+          {
+            "path": "/client/guoTaiMgmt/fundProviderRepayTransactionFlow",
+            "title": "客户还款交易流水",
+            "authPath": "/client/guoTaiMgmt/fundProviderRepayTransactionFlow",
+            "isShow": false,
+            "children": [],
+            "needWrap": true,
+            "icon": "el-icon-fund-provider-pepay",
+            "classBug": "item-class-style"
+          },
+          {
+            "path": "/client/guoTaiMgmt/assetMonitor",
+            "title": "资产监控",
+            "authPath": "/client/guoTaiMgmt/assetMonitor",
+            "isShow": false,
+            "children": [],
+            "icon": "el-icon-asset-monitor-mgmt",
+            "classBug": "item-class-style"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "物流管理",
+    "key": "logisticsMgmt",
+    "children": [
+      {
+        "path": "/client/logisticsPartyMgmt",
+        "title": "物流管理",
+        "authPath": "/client/logisticsPartyMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "业务管理",
+    "key": "businessMgmt",
+    "children": [
+      {
+        "path": "/client/businessA",
+        "title": "经纪人模式",
+        "authPath": "/client/businessA",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/partnerApplicationAList",
+            "title": "申请列表",
+            "authPath": "/client/partnerApplicationAList",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessAList",
+            "title": "业务列表",
+            "authPath": "/client/businessAList",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/businessB",
+        "title": "代理商模式",
+        "authPath": "/client/businessB",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/businessBList",
+            "title": "业务列表",
+            "authPath": "/client/businessBList",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/discountReturn",
+            "title": "优惠返还列表",
+            "authPath": "/client/discountReturn",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/businessC",
+        "title": "经纪人分销模式",
+        "authPath": "/client/businessC",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/partnerApplicationCList",
+            "title": "申请列表",
+            "authPath": "/client/partnerApplicationCList",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessCListX",
+            "title": "X业务列表",
+            "authPath": "/client/businessCListX",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessCListT",
+            "title": "T业务列表",
+            "authPath": "/client/businessCListT",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/businessCList/relegationRule",
+            "title": "保级规则",
+            "authPath": "/client/businessCList/relegationRule",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/xOrdinarySettlement",
+            "title": "X推广费用",
+            "authPath": "/client/xOrdinarySettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/TPromotionCost",
+            "title": "T推广费用",
+            "authPath": "/client/TPromotionCost",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/settlementUpgradeApplication",
+            "title": "结算升级申请",
+            "authPath": "/client/settlementUpgradeApplication",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/settlementUpgradeList",
+            "title": "结算升级列表",
+            "authPath": "/client/settlementUpgradeList",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/commonUserMgmt",
+        "title": "普通用户管理",
+        "authPath": "/client/commonUserMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "线上推广",
+    "key": "onlineExtension",
+    "children": [
+      {
+        "path": "/client/cluePool",
+        "title": "线索公海",
+        "authPath": "/client/cluePool",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/customerPool",
+        "title": "客户公海",
+        "authPath": "/client/customerPool",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/onlineUsersMgmt",
+        "title": "线上用户管理",
+        "authPath": "/client/onlineUsersMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/customerManagerMgmt",
+        "title": "客户经理管理",
+        "authPath": "/client/customerManagerMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/labelMgmt",
+        "title": "标签管理",
+        "authPath": "/client/labelMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/allClues",
+        "title": "全部线索",
+        "authPath": "/client/allClues",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/offlineClues",
+        "title": "转线下线索",
+        "authPath": "/client/offlineClues",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "资金运营",
+    "key": "fundOperate",
+    "children": [
+      {
+        "path": "/资金方管理",
+        "title": "资金方管理",
+        "authPath": "/资金方管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/funderMgmt",
+            "title": "资金方管理",
+            "authPath": "/client/funderMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/fundSideProductTemplateList",
+            "title": "资金产品模版管理",
+            "authPath": "/client/fundSideProductTemplateList",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/fundRouteMgmt",
+            "title": "资金路由管理",
+            "authPath": "/client/fundRouteMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/assetLaunchMgmt",
+        "title": "资产投放管理",
+        "authPath": "/client/assetLaunchMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/fundRatioExpenseMgmt",
+        "title": "资金占用费管理",
+        "authPath": "/client/fundRatioExpenseMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/资方还款管理",
+        "title": "资方还款管理",
+        "authPath": "/资方还款管理(资方运营)",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/tongKangFunderRepay",
+            "title": "同康保证金",
+            "authPath": "/client/tongKangFunderRepay",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/泉州交发保证金",
+            "title": "泉州交发保证金",
+            "authPath": "/泉州交发保证金",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/quanZhouFunderRepay",
+                "title": "保证金还款",
+                "authPath": "/client/quanZhouFunderRepay",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/quanZhouFunderRefund",
+                "title": "保证金退款",
+                "authPath": "/client/quanZhouFunderRefund",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "path": "/client/jiaofaWithhold",
+            "title": "交发代扣管理",
+            "authPath": "/client/jiaofaWithhold",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/欧力士还款管理",
+            "title": "欧力士还款管理",
+            "authPath": "/欧力士还款管理",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/olsFunderRepay",
+                "title": "保证金还款",
+                "authPath": "/client/olsFunderRepay",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/olsFunderPay",
+                "title": "代收付管理",
+                "authPath": "/client/olsFunderPay",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "path": "/国搜还款管理",
+            "title": "国搜还款管理",
+            "authPath": "/国搜还款管理",
+            "isShow": false,
+            "children": [
+              {
+                "path": "/client/guoSouFunderRepayMgmt",
+                "title": "代偿还款管理",
+                "authPath": "/client/guoSouFunderRepayMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/guoSouFunderRefundMgmt",
+                "title": "代偿退款管理",
+                "authPath": "/client/guoSouFunderRefundMgmt",
+                "isShow": false,
+                "children": []
+              },
+              {
+                "path": "/client/guoSouPaymentMgmt",
+                "title": "代收付管理",
+                "authPath": "/client/guoSouPaymentMgmt",
+                "isShow": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/资方结清管理",
+        "title": "资方结清管理",
+        "authPath": "/资方结清管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/quanZhouSettlement",
+            "title": "泉州交发",
+            "authPath": "/client/quanZhouSettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/guoSouSettlement",
+            "title": "国泰大搜车",
+            "authPath": "/client/guoSouSettlement",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/olsSettlement",
+            "title": "欧力士",
+            "authPath": "/client/olsSettlement",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "资产管理",
+    "key": "assetsMgmt",
+    "children": [
+      {
+        "path": "/assetMgmts",
+        "title": "资产管理",
+        "authPath": "/资产管理",
+        "isShow": false,
+        "children": [
+          {
+            "path": "/client/assetMgmt",
+            "title": "资产管理",
+            "authPath": "/client/assetMgmt",
+            "isShow": false,
+            "children": []
+          },
+          {
+            "path": "/client/storageMgmt",
+            "title": "存放地管理",
+            "authPath": "/client/storageMgmt",
+            "isShow": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "path": "/client/netCarMgmt",
+        "title": "网约车管理",
+        "authPath": "/client/netCarMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/GPSNotRecycleDeviceMgmt",
+        "title": "GPS未回收设备管理",
+        "authPath": "/client/GPSNotRecycleDeviceMgmt",
+        "isShow": false,
+        "children": []
+      },
+      {
+        "path": "/client/recordMgmt",
+        "title": "档案管理",
+        "authPath": "/client/recordMgmt",
+        "isShow": false,
+        "children": []
+      }
+    ]
+  }
+]

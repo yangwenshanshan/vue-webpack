@@ -1,3 +1,4 @@
+import store from '@/store'
 import axios from 'axios'
 import { Message } from 'element-ui'
 
@@ -8,6 +9,15 @@ const service = axios.create({
 })
 service.interceptors.request.use(
   config => {
+    if (!config.source) {
+      const source = axios.CancelToken.source()
+      config.cancelToken = source.token
+      store.commit('setCancelSource', {[`${config.url}_${config.method}`]: source})
+    } else {
+      config.cancelToken = config.source.token
+      store.commit('setCancelSource', {[`${config.url}_${config.method}`]: config.source})
+      delete config.source
+    }
     if (config.method === 'get') {
       config.params = {
         ...config.params,
@@ -22,6 +32,7 @@ service.interceptors.request.use(
 )
 service.interceptors.response.use(
   response => {
+    store.commit('removeCancelSource', [`${response.config.url}_${response.config.method}`])
     const res = response.data
     if (res.result !== 1) {
       if (res.mdata.code == 10001) {
