@@ -7,7 +7,7 @@
     </div>
     <el-form-item class="custom-form-item">
       <slot name="leftButton"></slot>
-      <!-- <yb-button btn-type="query" v-if="options && options.length" @click="getSearchData"></yb-button> -->
+        <el-button icon="el-icon-search" type="primary" v-if="options && options.length" @click="getSearchData">查询</el-button>
       <slot name="rightButton"></slot>
     </el-form-item>
   </el-form>

@@ -12,5 +12,8 @@ export default {
 
 <style lang="scss">
 #app{
+  --min-body-width: 1280px;
+  min-width: var(--min-body-width);
+  background: #eee;
 }
 </style>

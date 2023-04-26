@@ -75,7 +75,7 @@ const routes = [{
     ...routeModules,
     {
       path: '/client/:path(.*)*',
-      name: 'notFound',
+      name: 'clientNotFound',
       component: () => import('@/views/error/404.vue'),
     }
   ]

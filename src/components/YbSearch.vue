@@ -240,7 +240,4 @@ export default {
 </script>
 
 <style lang="scss">
-// .yb-search-class{
-//   width: 100%;
-// }
 </style>

@@ -1,16 +1,34 @@
 <template>
   <div class="default-layout">
     <el-container direction="vertical">
-      <el-header class="layout-header">
-        <el-menu :default-active="activeHeaderIndex" mode="horizontal" @select="headerSelect">
-          <el-menu-item :index="item.key" v-for="item in menuList" :key="item.key">{{item.title}}</el-menu-item>
-        </el-menu>
-      </el-header>
+      <div class="layout-header">
+        <div class="header-logo">
+          <img src="@/assets/system-title-icon.png" alt="">
+        </div>
+        <div class="header-menu">
+          <el-menu class="header-menu-main" :default-active="activeHeaderIndex" mode="horizontal" @select="headerSelect">
+            <el-menu-item :index="item.key" v-for="item in menuList" :key="item.key">
+              <img class="header-menu-icon" src="./icon/account-mgmt-icon.png" alt="">
+              <p>{{item.title}}</p>
+            </el-menu-item>
+          </el-menu>
+        </div>
+        <div class="header-avatar">
+          <el-avatar :src="userInfo.weChatHeadImgUrl"></el-avatar>
+          <div class="header-avatar-name">
+            <p class="user-account-info">{{ userInfo.userName }}</p>
+            <p class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</p>
+            <!-- <el-dropdown class="user-account-dropdown">
+              <span class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</span>
+            </el-dropdown> -->
+          </div>
+        </div>
+      </div>
       <el-container v-if="asideMenu">
-        <el-aside width="200px">
+        <el-aside class="custom-aside" width="150px">
           <NavbarLayout :default-active="activeAsideIndex" :menu="asideMenu"></NavbarLayout>
         </el-aside>
-        <el-main>
+        <el-main class="default-main-view">
           <router-view />
         </el-main>
       </el-container>
@@ -101,35 +119,113 @@ export default {
 
 <style lang="scss">
 .default-layout{
+  --header-height: 64px;
+  --header-menu-background: #3064c7;
+  --body-height: calc(100vh - 80px);
   .el-aside{
-    height: calc(100vh - 60px);
-    // .el-menu{
-    //   height: 100%;
-    // }
+    height: var(--body-height);
+  }
+  .default-main-view{
+    height: var(--body-height);
+    padding: 0;
+    margin-left: 10px;
   }
   .layout-header{
-    min-width: 2080px;
-    // .el-menu--horizontal{
-    //   // background-color: #3064c7;
-    //   // border-bottom: none;
-    //   .el-menu-item {
-    //     // color: #fff;
-    //     // font-size: 16px;
-    //     // width: 88px;
-    //     // .comment {
-    //     //   opacity: 0.8;
-    //     // }
-    //   }
-    //   .is-active{
-    //     // border-bottom: none;
-    //     // color: #fff;
-    //     // background-color: #2958b1;
-    //   }
-    //   // .el-menu-item:not(.is-disabled):hover {
-    //   //   color: #fff;
-    //   //   background-color: #3064c7;
-    //   // }
-    // }
+    background: var(--header-menu-background);
+    min-width: var(--min-body-width);
+    margin-bottom: 5px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    height: var(--header-height);
+    box-shadow: 4px 4px 8px 0 #ccc;
+    .header-logo{
+      width: 150px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 100%;
+      }
+    }
+    .header-menu{
+      position: relative;
+      flex: 1;
+      .header-menu-main{
+        background-color: var(--header-menu-background) !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-height: var(--header-height);
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        &:hover{
+          max-height: 100vh;
+          transition: max-height 1s ease-in-out;
+        }
+        .el-menu-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 12px;
+          border-bottom: 0;
+          color: rgba(255, 255, 255, 0.7);
+          line-height: 1.5;
+          &:hover{
+            background-color: var(--header-menu-background);
+          }
+          .header-menu-icon{
+            width: 24px;
+            height: 24px;
+            margin-bottom: 3px;
+          }
+        }
+        .el-menu-item.is-active{
+          background: #2958b1;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    .header-avatar{
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .header-avatar-name{
+        margin-left: 10px;
+        .user-account-info{
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          opacity: .99;
+          line-height: 17px;
+        }
+        .user-account-role{
+          color: #fff;
+          font-size: 12px;
+          font-weight: 400;
+          opacity: .6;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  .custom-aside{
+    .el-menu{
+      border-right: 0;
+      height: 100%;
+      .el-menu-item, .el-submenu__title{
+        height: 40px;
+        line-height: 40px;
+      }
+      .el-menu-item.is-active{
+        border-right: 3px solid #3064c7;
+        background-color: rgba(48,100,199,.1);
+      }
+    }
   }
   // .debug-box {
   //   position: fixed;

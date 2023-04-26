@@ -86,8 +86,7 @@ export default {
       margin-right: 30px;
       cursor: pointer;
       .yb-tabs-component_list_item-title{
-        padding: 9px 15px 0 20px;
-        height: 20px;
+        padding: 10px 15px;
         border-radius: 3px;
         border: 1px solid #dcdfe6;
       }

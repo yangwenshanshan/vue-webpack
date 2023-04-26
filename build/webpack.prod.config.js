@@ -35,7 +35,7 @@ module.exports = merge(webpackBaseConfig, {
         collapseWhitespace: true,
         minifyCSS: true
       },
-      template: resolve('public/index.html'),
+      template: resolve('index.html'),
       filename: 'index.html'
     }),
   ]

@@ -228,27 +228,47 @@ export default {
 </script>
 
 <style lang="scss">
-// .table-row-height{
-//   width: 100%;
-//   .border-style{
-//     border-right: 1px solid #EDEDED;
-//     .el-table__header-wrapper{
-//       border-top: 1px solid #EDEDED;
-//       .el-table__header{
-//         th{
-//           border-left: 1px solid #EDEDED;
-//           border-bottom: 1px solid #EDEDED;
-//         }
-//       }
-//     }
-//     .el-table__body-wrapper{
-//       .el-table__body{
-//         td{
-//           border-left: 1px solid #EDEDED;
-//           border-bottom: 1px solid #EDEDED;
-//         }
-//       }
-//     }
-//   }
-// }
+.table-row-height {
+  margin-top: 10px;
+  .el-table__header tr,
+  .el-table__header th {
+    background-color: #eff5ff;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    text-align: center;
+    padding: 8px 0;
+  }
+  .el-table__body tr,
+  .el-table__body td {
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    .el-button--text {
+      font-size: 12px;
+      padding: 0;
+    }
+  }
+  // .el-pagination.is-background .btn-next,
+  // .el-pagination.is-background .btn-prev,
+  // .el-pagination.is-background .el-pager li {
+  //   background-color: #3064c7;
+  //   color: white;
+  // }
+  // .el-pagination.is-background .btn-next.disabled,
+  // .el-pagination.is-background .btn-next:disabled,
+  // .el-pagination.is-background .btn-prev.disabled,
+  // .el-pagination.is-background .btn-prev:disabled,
+  // .el-pagination.is-background .el-pager li.disabled {
+  //   color: #c0c4cc;
+  //   background-color: #f4f4f5;
+  //   border: 1px solid;
+  // }
+}
 </style>
