@@ -39,8 +39,8 @@ export default {
       tabList: []
     }
   },
-  activated () {
-  },
+  // activated () {
+  // },
   mounted () {
     this.getSearchData()
     this.tabList = [...this.tabs]

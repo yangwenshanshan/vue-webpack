@@ -10,7 +10,7 @@
         <slot :name="name"></slot>
       </template>
     </el-table>
-    <el-pagination v-if="needPaging || !!queryFunction" layout="prev, next" :page-count="totalPage" background prev-text="上一页" next-text="下一页" @prev-click="prevBtnClick" @next-click="nextBtnClick"></el-pagination>
+    <el-pagination v-if="needPaging" layout="prev, next" :page-count="totalPage" background prev-text="上一页" next-text="下一页" @prev-click="prevBtnClick" @next-click="nextBtnClick"></el-pagination>
   </div>
 </template>
  
@@ -52,7 +52,7 @@ export default {
     },
     needPaging: {
       type: Boolean,
-      default: false
+      default: true
     },
     autoHeight: {
       type: Boolean,
@@ -73,6 +73,11 @@ export default {
       default: 20
     }
   },
+  computed: {
+    resize () {
+      return this.$store.state.auth.resize
+    }
+  },
   data () {
     return {
       tableVisible: true,
@@ -82,17 +87,17 @@ export default {
       currentPage: 0,
       tableData: [],
       tableHeight: '100vh',
-      paginationHeight: 75,
+      paginationHeight: 35,
       httpCancel: false,
       scrollViewEl: null,
       scrollViewTop: 0,
     }
   },
-  activated () {
-    setTimeout(() => {
-      this.scrollViewEl && this.scrollViewEl.scrollTo(0, this.scrollViewTop)
-    }, 0);
-  },
+  // activated () {
+  //   setTimeout(() => {
+  //     this.scrollViewEl && this.scrollViewEl.scrollTo(0, this.scrollViewTop)
+  //   }, 0);
+  // },
   watch: {
     // 处理多选时序号
     beginIndex:{
@@ -103,11 +108,14 @@ export default {
     },
     data (val) {
       this.tableData = val
-    }
+    },
+    resize () {
+      this.calculateHeight()
+    },
   },
-  deactivated () {
-    this.cancelAjax()
-  },
+  // deactivated () {
+  //   this.cancelAjax()
+  // },
   created () {
     this.initialize()
   },
@@ -130,8 +138,8 @@ export default {
       this.$nextTick(() => {
         if (this.$refs && this.$refs.tableMain && this.$refs.tableMain.$el) {
           let windowHeight = Math.min(window.innerHeight, document.documentElement.clientHeight)
-          let tableHeight = windowHeight - this.$refs.tableMain.$el.getBoundingClientRect().top - 10 - this.bottomDistance
-          if (this.needPaging || !!this.queryFunction) {
+          let tableHeight = windowHeight - this.$refs.tableMain.$el.getBoundingClientRect().top - 25
+          if (this.needPaging) {
             tableHeight = tableHeight - this.paginationHeight
           }
           this.tableHeight = tableHeight + 'px'
@@ -155,8 +163,8 @@ export default {
           this.httpCancel = axios.CancelToken.source()
           let responseData = await this.queryFunction({
             beginIndex: this.beginIndex,
-              pageSize: this.pageSize + 1,
-              ...this.searchData,
+            pageSize: this.pageSize + 1,
+            ...this.searchData,
           }, {
             source: this.httpCancel
           })
@@ -250,25 +258,36 @@ export default {
     font-weight: 400;
     color: #333333;
     text-align: center;
+    .cell {
+      padding: 10px 0;
+      line-height: 1.5;
+    }
     .el-button--text {
       font-size: 12px;
       padding: 0;
     }
   }
-  // .el-pagination.is-background .btn-next,
-  // .el-pagination.is-background .btn-prev,
-  // .el-pagination.is-background .el-pager li {
-  //   background-color: #3064c7;
-  //   color: white;
-  // }
-  // .el-pagination.is-background .btn-next.disabled,
-  // .el-pagination.is-background .btn-next:disabled,
-  // .el-pagination.is-background .btn-prev.disabled,
-  // .el-pagination.is-background .btn-prev:disabled,
-  // .el-pagination.is-background .el-pager li.disabled {
-  //   color: #c0c4cc;
-  //   background-color: #f4f4f5;
-  //   border: 1px solid;
-  // }
+  .el-pagination{
+    text-align: center;
+    margin: 10px 0;
+    span{
+      padding: 0 20px;
+    }
+  }
+  .el-pagination.is-background .btn-next,
+  .el-pagination.is-background .btn-prev,
+  .el-pagination.is-background .el-pager li {
+    background-color: #3064c7;
+    color: white;
+  }
+  .el-pagination.is-background .btn-next.disabled,
+  .el-pagination.is-background .btn-next:disabled,
+  .el-pagination.is-background .btn-prev.disabled,
+  .el-pagination.is-background .btn-prev:disabled,
+  .el-pagination.is-background .el-pager li.disabled {
+    color: #c0c4cc;
+    background-color: #f4f4f5;
+    border: 1px solid;
+  }
 }
 </style>

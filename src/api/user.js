@@ -13,5 +13,6 @@ export default {
       'X-Requested-With': 'XMLHttpRequest'
     }
   }),
-  userForSelect: (params) => http.get('/api/user/userForSelect', { params: params })
+  userForSelect: (params) => http.get('/api/user/userForSelect', { params: params }),
+  changeUserRole: (data) => http.post(`/api/userRole/changeUserRole`, data)
 }

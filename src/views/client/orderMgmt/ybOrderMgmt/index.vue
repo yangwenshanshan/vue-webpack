@@ -225,23 +225,6 @@ export default {
         index: 1,
         title: '订单列表1',
         method: orderMgmt.getCarTradeOrderListCarOrder,
-        params: {
-          _time: new Date().getTime().toString(32)
-        }
-      }, {
-        index: 2,
-        title: '订单列表2',
-        method: orderMgmt.getCarTradeOrderListCarOrder,
-        params: {
-          _time: new Date().getTime().toString(32)
-        }
-      }, {
-        index: 3,
-        title: '订单列表3',
-        method: orderMgmt.getCarTradeOrderListCarOrder,
-        params: {
-          _time: new Date().getTime().toString(32)
-        }
       }],
     };
   },
@@ -250,13 +233,13 @@ export default {
     this.userForSelect()
     this.initRouteQuery()
   },
-  activated () {
-    const refresh = window.sessionStorage.getItem('refresh')
-    window.sessionStorage.removeItem('refresh')
-    if (refresh && this.$refs.YbMultiSearchTable) {
-      this.$refs.YbMultiSearchTable.refresh()
-    }
-  },
+  // activated () {
+  //   const refresh = window.sessionStorage.getItem('refresh')
+  //   window.sessionStorage.removeItem('refresh')
+  //   if (refresh && this.$refs.YbMultiSearchTable) {
+  //     this.$refs.YbMultiSearchTable.refresh()
+  //   }
+  // },
   methods: {
     getTableData (list) {
       const opreate = this.$route.query.opreate

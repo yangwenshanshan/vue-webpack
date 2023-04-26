@@ -7,6 +7,11 @@
 <script>
 export default {
   name: 'App',
+  created () {
+    window.addEventListener('resize', () => {
+      this.$store.commit('resize')
+    })
+  }
 }
 </script>
 

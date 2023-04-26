@@ -5,7 +5,8 @@ const state = {
   urlList: [],
   buttonIdList: [],
   menuList: [],
-  cancelSource: {}
+  cancelSource: {},
+  resize: 0
 }
 
 const actions = {
@@ -65,6 +66,9 @@ const mutations = {
   setAuthInfo (state, mdata) {
     state.urlList = mdata.urlList
     state.buttonIdList = mdata.buttonIdList
+  },
+  resize (state) {
+    state.resize = new Date().getTime()
   }
 }
 

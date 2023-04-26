@@ -8,7 +8,7 @@
         <div class="header-menu">
           <el-menu class="header-menu-main" :default-active="activeHeaderIndex" mode="horizontal" @select="headerSelect">
             <el-menu-item :index="item.key" v-for="item in menuList" :key="item.key">
-              <img class="header-menu-icon" src="./icon/account-mgmt-icon.png" alt="">
+              <img class="header-menu-icon" :src="require('@/components/icon/' + item.icon)" alt="">
               <p>{{item.title}}</p>
             </el-menu-item>
           </el-menu>
@@ -17,10 +17,19 @@
           <el-avatar :src="userInfo.weChatHeadImgUrl"></el-avatar>
           <div class="header-avatar-name">
             <p class="user-account-info">{{ userInfo.userName }}</p>
-            <p class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</p>
-            <!-- <el-dropdown class="user-account-dropdown">
-              <span class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</span>
-            </el-dropdown> -->
+            <el-dropdown class="user-account-dropdown">
+              <p class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</p>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item v-for="item in roleInfo" :key="item.id" style="padding: 0 8px;">
+                  <div class="user-account-dropdown-info" @click="selectRole(item.id)">
+                    <el-image class="icon" :src="require('./icon/person-role-selected-icon.png')" v-if="userInfo.role == item.id" />
+                    <el-image class="icon" :src="require('./icon/person-role-icon.png')" v-else />
+                    <div :style="{'color': userInfo.role == item.id? '#3064C7' : '#666666'}">{{item.roleName}}</div>
+                  </div>
+                </el-dropdown-item>
+              </el-dropdown-menu>
+              <!-- <span class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</span> -->
+            </el-dropdown>
           </div>
         </div>
       </div>
@@ -51,6 +60,8 @@
 
 <script>
 import NavbarLayout from './NavbarLayout.vue'
+import user from "@/api/user";
+import { paramsToFormData } from '@/utils/utils'
 
 export default {
   components: {
@@ -65,6 +76,9 @@ export default {
     },
     userInfo () {
       return this.$store.state.user.userDto
+    },
+    roleInfo () {
+      return this.$store.state.user.roleDTO
     }
   },
   data () {
@@ -81,6 +95,15 @@ export default {
     this.activeAsideIndex = this.allPaths[this.allPaths.length - 1].path
   },
   methods: {
+    selectRole (id) {
+      user.changeUserRole(paramsToFormData({
+        roleId: id
+      })).then(res => {
+        if (res.result === 1) {
+          window.location.reload()
+        }
+      })
+    },
     headerSelect (key) {
       if (this.activeHeaderIndex === key) return
       this.activeHeaderIndex = key
@@ -121,7 +144,7 @@ export default {
 .default-layout{
   --header-height: 64px;
   --header-menu-background: #3064c7;
-  --body-height: calc(100vh - 80px);
+  --body-height: calc(100vh - 75px);
   .el-aside{
     height: var(--body-height);
   }
@@ -161,6 +184,7 @@ export default {
         max-height: var(--header-height);
         overflow: hidden;
         transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        border: 0;
         &:hover{
           max-height: 100vh;
           transition: max-height 1s ease-in-out;
@@ -180,7 +204,8 @@ export default {
           .header-menu-icon{
             width: 24px;
             height: 24px;
-            margin-bottom: 3px;
+            padding-top: 3px;
+            // margin-bottom: 3px;
           }
         }
         .el-menu-item.is-active{
@@ -202,13 +227,17 @@ export default {
           font-weight: 400;
           opacity: .99;
           line-height: 17px;
+          margin-bottom: 3px;
         }
-        .user-account-role{
-          color: #fff;
-          font-size: 12px;
-          font-weight: 400;
-          opacity: .6;
-          line-height: 17px;
+        .user-account-dropdown{
+          .user-account-role{
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            opacity: .6;
+            line-height: 17px;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -245,5 +274,17 @@ export default {
   //     cursor: pointer;
   //   }
   // }
+}
+.el-dropdown-menu{
+  width: 150px;
+  .user-account-dropdown-info{
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    .icon{
+      height: 10px;
+      width: 10px;
+    }
+  }
 }
 </style>

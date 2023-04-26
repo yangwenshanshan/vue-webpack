@@ -14,6 +14,6 @@ export default {
     }
   }),
   getCarTradeOrderListCarOrder: (params, config) => http.get('/api/carTradeOrder/listCarOrder', {params, ...config}),
-  queueJumping: (data) => http.post('/api/carTradeOrder/topOrder', {data}),
-  updateCustomerAuthInfo: (data) => http.post('/api/carTradeOrder/updateCustomerAuthInfo', {data})
+  queueJumping: (data) => http.post('/api/carTradeOrder/topOrder', data),
+  updateCustomerAuthInfo: (data) => http.post('/api/carTradeOrder/updateCustomerAuthInfo', data)
 }

@@ -2,6 +2,7 @@
   {
     "title": "订单管理",
     "key": "orderMgmt",
+    "icon": "order-mgmt-icon.png",
     "children": [
       {
         "path": "/client/ybOrderMgmt",
@@ -29,6 +30,7 @@
   {
     "title": "金融产品",
     "key": "processMgmt",
+    "icon": "process-mgmt-icon.png",
     "children": [
       {
         "path": "/client/newCarMgmt",
@@ -71,6 +73,7 @@
   {
     "title": "风控管理",
     "key": "riskControlMgmt",
+    "icon": "risk-control-mgmt-icon.png",
     "children": [
       {
         "path": "/riskControl",
@@ -193,6 +196,7 @@
   {
     "title": "数据中心",
     "key": "salesStatistics",
+    "icon": "sales-statistics-icon.png",
     "children": [
       {
         "path": "/client/kpiReport",
@@ -549,6 +553,7 @@
   {
     "title": "账户管理",
     "key": "accountMgmt",
+    "icon": "account-mgmt-icon.png",
     "children": [
       {
         "path": "/client/realNameList",
@@ -611,6 +616,7 @@
   {
     "title": "财务管理",
     "key": "financeMgmt",
+    "icon": "financial-payment-icon.png",
     "children": [
       {
         "path": "/client/bankPay",
@@ -823,6 +829,7 @@
   {
     "title": "系统管理",
     "key": "systemMgmt",
+    "icon": "system-mgmt-icon.png",
     "children": [
       {
         "path": "/client/commissionModelList",
@@ -1059,6 +1066,7 @@
   {
     "title": "流程管理",
     "key": "standingBookMgmt",
+    "icon": "ledger-mgmt-icon.png",
     "children": [
       {
         "path": "/client/purchaseCarWork",
@@ -1369,6 +1377,7 @@
   {
     "title": "租后管理",
     "key": "postRentingMgmt",
+    "icon": "after-rent-mgmt-icon.png",
     "children": [
       {
         "path": "/client/repaymentMgmt",
@@ -1654,6 +1663,7 @@
   {
     "title": "资方管理",
     "key": "fundProviderMgmt",
+    "icon": "fund-provider-mgmt-icon.png",
     "children": [
       {
         "path": "/尚诚",
@@ -2448,6 +2458,7 @@
   {
     "title": "物流管理",
     "key": "logisticsMgmt",
+    "icon": "ledger-mgmt-icon.png",
     "children": [
       {
         "path": "/client/logisticsPartyMgmt",
@@ -2461,6 +2472,7 @@
   {
     "title": "业务管理",
     "key": "businessMgmt",
+    "icon": "business-mgmt-icon.png",
     "children": [
       {
         "path": "/client/businessA",
@@ -2582,6 +2594,7 @@
   {
     "title": "线上推广",
     "key": "onlineExtension",
+    "icon": "online-extension-icon.png",
     "children": [
       {
         "path": "/client/cluePool",
@@ -2637,6 +2650,7 @@
   {
     "title": "资金运营",
     "key": "fundOperate",
+    "icon": "online-extension-icon.png",
     "children": [
       {
         "path": "/资金方管理",
@@ -2810,6 +2824,7 @@
   {
     "title": "资产管理",
     "key": "assetsMgmt",
+    "icon": "asset-mgmt-icon.png",
     "children": [
       {
         "path": "/assetMgmts",
