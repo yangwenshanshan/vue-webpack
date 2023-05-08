@@ -97,3 +97,19 @@ html {  }
 .clearfix:before,
 .clearfix:after {  display: table;  line-height: 0;  content: "";  }
 .clearfix:after {  clear: both;  }
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}

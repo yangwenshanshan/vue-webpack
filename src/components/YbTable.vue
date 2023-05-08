@@ -244,11 +244,13 @@ export default {
     padding: 0;
     border: 0;
     font-size: 14px;
-    font-family: PingFang SC;
     font-weight: 500;
     color: #333333;
     text-align: center;
-    padding: 8px 0;
+    .cell {
+      padding: 6px 0;
+      line-height: 1.2;
+    }
   }
   .el-table__body tr,
   .el-table__body td {
@@ -259,7 +261,7 @@ export default {
     color: #333333;
     text-align: center;
     .cell {
-      padding: 10px 0;
+      padding: 10px 8px;
       line-height: 1.5;
     }
     .el-button--text {

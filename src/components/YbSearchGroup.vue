@@ -1,6 +1,6 @@
 <template>
   <el-form class="yb-search-group" :inline="true">
-    <div style="padding-left:20px" v-for="item in options" :key="Array.isArray(item.key) ? item.key[0] : item.key" v-if="item.visible === undefined || item.visible === true || item.visible() === true">
+    <div class="yb-search-group-item" v-for="item in options" :key="Array.isArray(item.key) ? item.key[0] : item.key" v-if="item.visible === undefined || item.visible === true || item.visible() === true">
       <el-form-item :style="item.type === 'daterange' ? 'width: 320px;' : item['collapse-tags'] ? 'width: 260px;' : (item.width ? item.width :'width: 240px;')" :label="item.title">
         <YbSearch @change="(value) => selectChange(value, item)" :collapse-tags="item['collapse-tags']" :multiple="item.multiple" :show-all-levels="item.showAllLevels" :options="item.options" :props="item.props" :start-placeholder="item.startPlaceholder" :end-placeholder="item.endPlaceholder" v-model="searchData[item.key]" :type="item.type" :placeholder="item.placeholder ? item.placeholder : placeholderType[item.type] + item.title"></YbSearch>
       </el-form-item>
@@ -90,6 +90,10 @@ export default {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 5px;
+  .yb-search-group-item{
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
   .el-form-item{
     align-items: center;
     margin-bottom: 3px;

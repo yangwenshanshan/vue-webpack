@@ -14,5 +14,6 @@ export default {
     }
   }),
   userForSelect: (params) => http.get('/api/user/userForSelect', { params: params }),
-  changeUserRole: (data) => http.post(`/api/userRole/changeUserRole`, data)
+  changeUserRole: (data) => http.post(`/api/userRole/changeUserRole`, data),
+  getCurrentFrontPageBanner: () => http.get('/api/banner/getCurrentFrontPageBanner')
 }

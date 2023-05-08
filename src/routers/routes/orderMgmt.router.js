@@ -3,7 +3,12 @@ export default [
   {
     path: "/client/ybOrderMgmt",
     name: "订单管理-订单管理",
-    component: () => import('@/views/client/orderMgmt/ybOrderMgmt/index.vue')
+    component: () => import('@/views/client/orderMgmt/ybOrderMgmt/index.vue'),
+    children: [{
+      path: "/client/ybOrderMgmt/detail",
+      name: "订单管理-订单管理-详情",
+      component: () => import('@/views/client/orderMgmt/ybOrderMgmt/detail/index.vue')
+    }]
   },
   /*********************************历史订单管理*********************************************/
   {

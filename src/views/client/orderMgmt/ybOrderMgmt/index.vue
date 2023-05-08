@@ -229,9 +229,19 @@ export default {
     };
   },
   created () {
+    console.log('created')
     this.initializeTheFilterState()
     this.userForSelect()
     this.initRouteQuery()
+  },
+  mounted () {
+    console.log('mounted')
+  },
+  activated () {
+    console.log('actived')
+  },
+  deactivated () {
+    console.log('deactivated')
   },
   // activated () {
   //   const refresh = window.sessionStorage.getItem('refresh')
@@ -319,8 +329,9 @@ export default {
             path: "/client/ybOrderMgmtVue/firstTrialOrderDetail?id=" + row.id
           })
         } else {
+          this.$store.commit('setKeepPage', 'ybOrderMgmt')
           this.$router.push({
-            name: 'ybOrderMgmtDetail',
+            path: '/client/ybOrderMgmt/detail',
             query: {
               id: row.id
             }

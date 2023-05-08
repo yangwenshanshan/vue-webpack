@@ -35,7 +35,8 @@ const devWebpackConfig = merge(webpackBaseConfig, {
     new htmlWebpackPlugin({
       title: '易靓好车',
       template: resolve('index.html'),
-      filename: 'index.html'
+      filename: 'index.html',
+      favicon: resolve('public/favicon.ico')
     }),
     new WebpackBar({
       color: '#3064c7',
@@ -60,11 +61,11 @@ const devWebpackConfig = merge(webpackBaseConfig, {
           '^/api': ''
         }
       },
+    },
+    historyApiFallback: {
+      // HTML5 history模式
+      rewrites: [{ from: /.*/, to: '/index.html' }]
     }
-    // historyApiFallback: {
-    //   // HTML5 history模式
-    //   rewrites: [{ from: /.*/, to: '/index.html' }]
-    // }
   },
 })
 

@@ -22,13 +22,12 @@
               <el-dropdown-menu slot="dropdown">
                 <el-dropdown-item v-for="item in roleInfo" :key="item.id" style="padding: 0 8px;">
                   <div class="user-account-dropdown-info" @click="selectRole(item.id)">
-                    <el-image class="icon" :src="require('./icon/person-role-selected-icon.png')" v-if="userInfo.role == item.id" />
-                    <el-image class="icon" :src="require('./icon/person-role-icon.png')" v-else />
-                    <div :style="{'color': userInfo.role == item.id? '#3064C7' : '#666666'}">{{item.roleName}}</div>
+                    <el-image class="icon" :src="require('@/assets/person-role-selected-icon.png')" v-if="userInfo.role == item.id" />
+                    <el-image class="icon" :src="require('@/assets/person-role-icon.png')" v-else />
+                    <div :style="{'color': userInfo.role == item.id? 'var(--header-menu-background)' : '#666666'}">{{item.roleName}}</div>
                   </div>
                 </el-dropdown-item>
               </el-dropdown-menu>
-              <!-- <span class="user-account-role" style="width: 100px">{{userInfo.loginRoleName}}</span> -->
             </el-dropdown>
           </div>
         </div>
@@ -38,7 +37,12 @@
           <NavbarLayout :default-active="activeAsideIndex" :menu="asideMenu"></NavbarLayout>
         </el-aside>
         <el-main class="default-main-view">
-          <router-view />
+          <transition name="fade-transform" mode="out-in">
+            {{ keepPages }}
+            <keep-alive :include="keepPages">
+              <router-view />
+            </keep-alive>
+          </transition>
         </el-main>
       </el-container>
     </el-container>
@@ -60,14 +64,15 @@
 
 <script>
 import NavbarLayout from './NavbarLayout.vue'
-import user from "@/api/user";
-import { paramsToFormData } from '@/utils/utils'
 
 export default {
   components: {
     NavbarLayout
   },
   computed: {
+    keepPages () {
+      return this.$store.state.auth.keepPages
+    },
     menuList () {
       return this.$store.state.auth.menuList
     },
@@ -96,13 +101,7 @@ export default {
   },
   methods: {
     selectRole (id) {
-      user.changeUserRole(paramsToFormData({
-        roleId: id
-      })).then(res => {
-        if (res.result === 1) {
-          window.location.reload()
-        }
-      })
+      this.$store.dispatch('changeUserRole', { roleId: id })
     },
     headerSelect (key) {
       if (this.activeHeaderIndex === key) return
@@ -142,9 +141,6 @@ export default {
 
 <style lang="scss">
 .default-layout{
-  --header-height: 64px;
-  --header-menu-background: #3064c7;
-  --body-height: calc(100vh - 75px);
   .el-aside{
     height: var(--body-height);
   }
@@ -251,7 +247,7 @@ export default {
         line-height: 40px;
       }
       .el-menu-item.is-active{
-        border-right: 3px solid #3064c7;
+        border-right: 3px solid var(--header-menu-background);
         background-color: rgba(48,100,199,.1);
       }
     }
@@ -274,17 +270,5 @@ export default {
   //     cursor: pointer;
   //   }
   // }
-}
-.el-dropdown-menu{
-  width: 150px;
-  .user-account-dropdown-info{
-    display: flex;
-    align-items: center;
-    padding: 3px 8px;
-    .icon{
-      height: 10px;
-      width: 10px;
-    }
-  }
 }
 </style>

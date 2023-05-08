@@ -35,7 +35,7 @@ service.interceptors.response.use(
     store.commit('removeCancelSource', [`${response.config.url}_${response.config.method}`])
     const res = response.data
     if (res.result !== 1) {
-      if (res.mdata.code == 10001) {
+      if (res.mdata && res.mdata.code == 10001) {
         if (!excludeMessageUrl.includes(response.config.url)) {
           Message({
             message: '请登陆后再试',

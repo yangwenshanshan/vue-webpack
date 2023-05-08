@@ -5,6 +5,7 @@ const webpackBaseConfig = require('./webpack.base.config')
 const { merge } = require('webpack-merge')
 const { styleLoaders } = require('./vue-loader.conf')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackBar = require('webpackbar');
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
@@ -28,15 +29,20 @@ module.exports = merge(webpackBaseConfig, {
       filename: 'static/css/[name].[contenthash].css',
       chunkFilename: 'static/css/[name].[contenthash].css'
     }),
+    new WebpackBar({
+      color: '#3064c7',
+      name: '易靓好车',
+    }),
     new htmlWebpackPlugin({
       title: '易靓好车',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
-        minifyCSS: true
+        minifyCSS: true,
       },
       template: resolve('index.html'),
-      filename: 'index.html'
+      filename: 'index.html',
+      favicon: resolve('public/favicon.ico')
     }),
   ]
 })
