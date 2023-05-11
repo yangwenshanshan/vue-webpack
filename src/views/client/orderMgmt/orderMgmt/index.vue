@@ -19,6 +19,9 @@
         label="地址">
       </el-table-column>
     </el-table>
+    <div style="background-color: #fff;">
+      <preview-upload-image></preview-upload-image>
+    </div>
   </div>
 </template>
 
