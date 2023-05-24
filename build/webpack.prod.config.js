@@ -1,6 +1,7 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpackBaseConfig = require('./webpack.base.config')
 const { merge } = require('webpack-merge')
 const { styleLoaders } = require('./vue-loader.conf')
@@ -17,7 +18,6 @@ module.exports = merge(webpackBaseConfig, {
     rules: styleLoaders({isProduction: true})
   },
   output: {
-    publicPath: '/dist/',
     filename: 'static/js/[name].[chunkhash].js',
     chunkFilename: 'static/js/[name].[chunkhash].js',
   },
@@ -40,9 +40,22 @@ module.exports = merge(webpackBaseConfig, {
         collapseWhitespace: true,
         minifyCSS: true,
       },
-      template: resolve('index.html'),
+      template: resolve('public/index.html'),
       filename: 'index.html',
       favicon: resolve('public/favicon.ico')
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: resolve('public'),
+          to: resolve('dist'),
+          globOptions: {
+            dot: true,
+            gitignore: true,
+            ignore: ['**/index.html', '**/favicon.ico'],
+          }
+        },
+      ]
     }),
   ]
 })

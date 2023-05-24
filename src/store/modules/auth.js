@@ -2,6 +2,7 @@ import user from '@/api/user'
 import router, { clientRoute, notFoundAndNoPower, resetRouter } from '@/routers'
 import authJSON from '@/routers/menu.json'
 import { paramsToFormData } from '@/utils/utils'
+import { Loading } from 'element-ui';
 import store from '..'
 
 let routeModules = []
@@ -71,10 +72,17 @@ const state = {
 const actions = {
   changeUserRole ({ commit }, params) {
     return new Promise((resolve, reject) => {
+      const loading = Loading.service({
+        fullscreen: true,
+        text: '角色切换中，请稍后',
+        spinner: 'el-icon-loading',
+        background: "rgba(0, 0, 0, 0.8)"
+      });
       user.changeUserRole(paramsToFormData(params)).then(async res => {
         if (res.result === 1) {
           await store.dispatch('getUserInfo')
           await store.dispatch('getAuthList')
+          loading.close()
           if (state.menuList && state.menuList[0] && state.menuList[0].children && state.menuList[0].children[0]) {
             router.replace({
               path: state.menuList[0].children[0].path,
@@ -85,8 +93,11 @@ const actions = {
           }
           resolve()
         } else {
+          loading.close()
           reject()
         }
+      }).catch(() => {
+        loading.close()
       })
     })
   },

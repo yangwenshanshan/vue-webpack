@@ -34,7 +34,7 @@ const devWebpackConfig = merge(webpackBaseConfig, {
     // new webpack.NamedModulesPlugin(),
     new htmlWebpackPlugin({
       title: '易靓好车',
-      template: resolve('index.html'),
+      template: resolve('public/index.html'),
       filename: 'index.html',
       favicon: resolve('public/favicon.ico')
     }),
@@ -52,6 +52,9 @@ const devWebpackConfig = merge(webpackBaseConfig, {
       logging: 'error',
       progress: false,
       overlay: true,
+    },
+    static: {
+      directory: resolve('public')
     },
     proxy: {
       '/api': {
